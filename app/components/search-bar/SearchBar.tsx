@@ -1,22 +1,21 @@
 import './search-bar.css';
 import { useEffect } from 'react';
-import { lsHandler } from '../../utils/ls-handler';
 import ErrorButton from '../error-button/ErrorButton';
 import { useCharacterFilters } from '../../hooks/useCharacterFilters';
+import useLocalStorage from '~/hooks/useLocalStorage';
 
 const SearchBar = ({ handleSearch }: { handleSearch: () => void }) => {
+  const [searchWord, setSearchWord] = useLocalStorage('Search-Word');
   const { status, setFilters } = useCharacterFilters();
 
   const clickSearch = async () => {
-    lsHandler.setValue(status);
+    setSearchWord(status);
     handleSearch();
   };
 
   const changeInput = (word: string) => setFilters({ page: 1, status: word });
 
   useEffect(() => {
-    const searchWord = lsHandler.getValue();
-    console.log(searchWord);
     if (!status && searchWord) setFilters({ status: searchWord, page: 1 });
   }, [setFilters]);
 
