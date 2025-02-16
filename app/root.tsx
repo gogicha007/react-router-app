@@ -8,6 +8,7 @@ import {
 } from 'react-router';
 import { Provider } from 'react-redux';
 import { store } from './state/store';
+import { ThemeProvider } from './context/ThemeContext';
 
 import type { Route } from './+types/root';
 import './app.css';
@@ -46,7 +47,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
 export default function App() {
   return (
     <Provider store={store}>
-      <Outlet />;
+      <ThemeProvider>
+        <Outlet />
+      </ThemeProvider>
     </Provider>
   );
 }

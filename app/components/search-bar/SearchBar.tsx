@@ -20,8 +20,8 @@ const SearchBar = ({ handleSearch }: { handleSearch: () => void }) => {
   }, [setFilters]);
 
   return (
-    <>
-      <form className="search__bar">
+    <div className='search__bar'>
+      <form className="search__form">
         <label htmlFor="search">Search by status</label>
         <input
           value={status}
@@ -41,7 +41,7 @@ const SearchBar = ({ handleSearch }: { handleSearch: () => void }) => {
         </button>
       </form>
       <ErrorButton />
-    </>
+    </div>
   );
 };
 
