@@ -8,7 +8,7 @@ import eslintPluginPrettier from 'eslint-plugin-prettier/recommended';
 import reactCompiler from 'eslint-plugin-react-compiler';
 
 export default tseslint.config(
-  { ignores: ['.react-router','dist'] },
+  { ignores: ['.react-router', 'dist'] },
   {
     extends: [
       js.configs.recommended,

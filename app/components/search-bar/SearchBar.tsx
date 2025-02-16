@@ -16,11 +16,12 @@ const SearchBar = ({ handleSearch }: { handleSearch: () => void }) => {
 
   useEffect(() => {
     const searchWord = lsHandler.getValue();
+    console.log(searchWord);
     if (!status && searchWord) setFilters({ status: searchWord, page: 1 });
   }, [setFilters]);
 
   return (
-    <div className='search__bar'>
+    <div className="search__bar">
       <form className="search__form">
         <label htmlFor="search">Search by status</label>
         <input

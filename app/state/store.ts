@@ -1,9 +1,8 @@
-import type { Action, ThunkAction } from '@reduxjs/toolkit';
+// import type { Action, ThunkAction } from '@reduxjs/toolkit';
 import { configureStore } from '@reduxjs/toolkit';
 
 export const store = configureStore({
-  reducer: {
-  },
+  reducer: {},
 });
 
 export type AppStore = typeof store;
