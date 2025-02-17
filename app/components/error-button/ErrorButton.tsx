@@ -1,3 +1,4 @@
+import './error-button.css';
 import { useState } from 'react';
 
 const ErrorButton = () => {

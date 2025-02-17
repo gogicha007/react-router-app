@@ -24,6 +24,10 @@
   width: 250px;
   box-sizing: border-box;
 }
+.search__form button {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
 
 .search__form input[type='search']::-webkit-search-cancel-button {
   -webkit-appearance: none;
