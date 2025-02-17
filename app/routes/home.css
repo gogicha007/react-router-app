@@ -29,7 +29,16 @@
 .home__main {
   display: flex;
 }
-.home__results {
+.home__cardlist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home__devider {
+  width: 100%;
+  height: 1px;
+  background-color: blue;
+  margin: 20px 0;
 }
 .home__details {
   display: none;

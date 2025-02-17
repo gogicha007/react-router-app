@@ -7,8 +7,10 @@ import { useState } from 'react';
 import { useCharacterFilters } from '~/hooks/useCharacterFilters';
 import { useGetListQuery } from '~/state/features/characters/charactersApiSlice';
 import Loader from '~/components/loader/Loader';
+import { Pagination } from '~/components/pagination/Pagination';
+import { Outlet } from 'react-router';
 
-type QueryError = {
+type IQueryError = {
   status: number;
   data: {
     error: string;
@@ -41,8 +43,17 @@ export default function Home() {
         <ThemeControls />
       </header>
       <main>
-        {error && <h1>{(error as QueryError).status}</h1>}
-        {!error && data && <Results {...data} />}
+        {error && <h1>{(error as IQueryError).status}</h1>}
+        {!error && data && (
+          <div className="home__main">
+            <div className="home__cardlist">
+              <Results {...data} />
+              <div className="home__devider"></div>
+              <Pagination resInfo={data.info} handleSearch={handleSearch} />
+            </div>
+            <Outlet />
+          </div>
+        )}
       </main>
       {isFetching && <Loader />}
     </div>

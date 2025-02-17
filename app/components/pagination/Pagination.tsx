@@ -6,16 +6,19 @@ import { isValidHTTPURL } from '../../utils/validators';
 interface Props {
   disabled?: boolean;
   resInfo: IRespInfo;
+  handleSearch: () => void;
 }
 
 export const Pagination = (props: Props) => {
   const { page, setFilters } = useCharacterFilters();
+
   const clickPagination = (direction: 'prev' | 'next') => {
     const urlString = props.resInfo[direction];
     if (isValidHTTPURL(urlString as string)) {
       const url = new URL(urlString as string);
       const searchParams = url.searchParams.get('page');
       setFilters({ page: searchParams ? +searchParams : +page });
+      props.handleSearch();
     } else console.error('URL string is not valid');
   };
 
