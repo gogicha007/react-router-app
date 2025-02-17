@@ -7,11 +7,13 @@ import {
   ScrollRestoration,
 } from 'react-router';
 import { Provider } from 'react-redux';
-import { store } from './state/store';
+import { setupStore } from './state/store';
 import { ThemeProvider } from './context/ThemeContext';
 
 import type { Route } from './+types/root';
 import './app.css';
+
+const store = setupStore();
 
 export const links: Route.LinksFunction = () => [
   { rel: 'preconnect', href: 'https://fonts.googleapis.com' },

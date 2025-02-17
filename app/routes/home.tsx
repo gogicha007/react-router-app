@@ -1,7 +1,19 @@
+import Results from '~/components/card-list/CardList';
 import './home.css';
 // import type { Route } from './+types/home';
 import SearchBar from '~/components/search-bar/SearchBar';
 import ThemeControls from '~/components/theme-controls/ThemeControls';
+import { useState } from 'react';
+import { useCharacterFilters } from '~/hooks/useCharacterFilters';
+import { useGetListQuery } from '~/state/features/characters/charactersApiSlice';
+import Loader from '~/components/loader/Loader';
+
+type QueryError = {
+  status: number;
+  data: {
+    error: string;
+  };
+};
 
 export function meta() {
   return [
@@ -11,15 +23,28 @@ export function meta() {
 }
 
 export default function Home() {
+  const { page, status } = useCharacterFilters();
+  const [params, setParams] = useState({ page: 1, status: '' });
+  const { data, isFetching, error } = useGetListQuery({
+    page: +params.page,
+    status: params.status,
+  });
+
   const handleSearch = () => {
-    console.log('handle search');
+    setParams({ page: +page, status: status });
   };
+
   return (
     <div className="home">
-      <div className="home__top">
+      <header className="home__top">
         <SearchBar handleSearch={handleSearch} />
         <ThemeControls />
-      </div>
+      </header>
+      <main>
+        {error && <h1>{(error as QueryError).status}</h1>}
+        {!error && data && <Results {...data} />}
+      </main>
+      {isFetching && <Loader />}
     </div>
   );
 }
