@@ -37,3 +37,8 @@ export type ICharacterFilters = {
   status?: string;
   id?: string;
 };
+
+export type IParamsType = {
+  page: number;
+  status: string;
+};

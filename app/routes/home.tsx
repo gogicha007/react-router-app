@@ -8,7 +8,7 @@ import Results from '~/components/card-list/CardList';
 import SearchBar from '~/components/search-bar/SearchBar';
 import Loader from '~/components/loader/Loader';
 import { Pagination } from '~/components/pagination/Pagination';
-import type { IQueryError } from '~/types/interface';
+import type { IQueryError, IParamsType } from '~/types/interface';
 
 export function meta() {
   return [
@@ -19,7 +19,7 @@ export function meta() {
 
 export default function Home() {
   const { page, status } = useCharacterFilters();
-  const [params, setParams] = useState({ page: 1, status: '' });
+  const [params, setParams] = useState<IParamsType>({ page: 1, status: '' });
   const { data, isFetching, error } = useGetListQuery({
     page: +params.page,
     status: params.status,
@@ -55,7 +55,11 @@ export default function Home() {
             >
               <Results {...data} />
               <div className="home__devider"></div>
-              <Pagination resInfo={data.info} handleSearch={handleSearch} />
+              <Pagination
+                resInfo={data.info}
+                handleSearch={handleSearch}
+                setParams={setParams}
+              />
             </div>
             <Outlet />
           </div>
