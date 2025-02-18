@@ -2,10 +2,10 @@ import './search-bar.css';
 import { useEffect } from 'react';
 import ErrorButton from '../error-button/ErrorButton';
 import { useCharacterFilters } from '../../hooks/useCharacterFilters';
-import useLocalStorage from '~/hooks/useLocalStorage';
+import { useLocalStorage } from '~/hooks/useLocalStorage';
 
 const SearchBar = ({ handleSearch }: { handleSearch: () => void }) => {
-  const [searchWord, setSearchWord] = useLocalStorage('Search-Word');
+  const [searchWord, setSearchWord] = useLocalStorage('Search-Word', '');
   const { status, setFilters } = useCharacterFilters();
 
   const clickSearch = async () => {

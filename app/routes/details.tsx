@@ -1,7 +1,6 @@
 import { useNavigate, useOutletContext, useParams } from 'react-router';
 import { useGetDetailsQuery } from '../state/features/characters/charactersApiSlice';
 import Loader from '../components/loader/Loader';
-import { useEffect } from 'react';
 
 interface IFContext {
   closeClicked: () => void;
@@ -19,14 +18,9 @@ export default function Details() {
     error,
   } = useGetDetailsQuery({ id: id as string });
 
-  useEffect(() => {
-    console.log('open');
-  }, [id]);
-
   const handleClickClose = () => {
     navigate(context?.counter > 0 ? -context.counter : -1);
     context?.closeClicked();
-    console.log('close clicked');
   };
 
   if (isFetching) {
