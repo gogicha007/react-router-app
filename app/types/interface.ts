@@ -25,6 +25,13 @@ export interface ICharacterDetails {
   };
 }
 
+export type IQueryError = {
+  status: number;
+  data: {
+    error: string;
+  };
+};
+
 export type ICharacterFilters = {
   page?: number;
   status?: string;
