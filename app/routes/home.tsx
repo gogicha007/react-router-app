@@ -29,12 +29,10 @@ export default function Home() {
   const location = useLocation();
 
   const handleSearch = () => {
-    console.log('handle search', page, '  status:', status);
     setParams({ page: +page, status: status });
   };
 
-  const handleListClick = (e: EventTarget) => {
-    console.log(e);
+  const handleListClick = () => {
     const hasIdParam = /\/\d+$/.test(location.pathname);
     if (hasIdParam) navigate(-1);
   };
@@ -49,17 +47,10 @@ export default function Home() {
         {error && <h1>{(error as IQueryError).status}</h1>}
         {!error && data && (
           <div className="home__main">
-            <div
-              className="home__cardlist"
-              onClick={(e) => handleListClick(e.target)}
-            >
+            <div className="home__cardlist" onClick={() => handleListClick()}>
               <Results {...data} />
               <div className="home__devider"></div>
-              <Pagination
-                resInfo={data.info}
-                handleSearch={handleSearch}
-                setParams={setParams}
-              />
+              <Pagination resInfo={data.info} setParams={setParams} />
             </div>
             <Outlet />
           </div>

@@ -1,18 +1,18 @@
 import './card.css';
 import type { ICharacterDetails } from '../../types/interface';
-// import { useDispatch, useSelector } from 'react-redux';
-// import { toggleCardSelection } from '../../state/checkCards/selectedCardsSlice';
-// import type { RootState } from '../../state/store';
+import { useDispatch, useSelector } from 'react-redux';
+import { toggleCardSelection } from '../../state/features/pickCards/selectedCardsSlice';
+import type { RootState } from '../../state/store';
 
 export const Card = (data: ICharacterDetails) => {
-  //   const dispatch = useDispatch();
-  //   const selectedCards = useSelector(
-  //     (state: RootState) => state.selectedCards.selectedCards
-  //   );
+  const dispatch = useDispatch();
+  const selectedCards = useSelector(
+    (state: RootState) => state.selectedCards.selectedCards
+  );
 
   const handleCheckboxClick = (event: React.MouseEvent<HTMLInputElement>) => {
     event.stopPropagation();
-    // dispatch(toggleCardSelection(data.id));
+    dispatch(toggleCardSelection(data.id));
   };
 
   return (
@@ -24,7 +24,7 @@ export const Card = (data: ICharacterDetails) => {
       <input
         className="card__checkbox card__checkbox-enlarged"
         type="checkbox"
-        // checked={selectedCards.includes(data.id)}
+        checked={selectedCards.includes(data.id)}
         onClick={handleCheckboxClick}
       />
     </div>

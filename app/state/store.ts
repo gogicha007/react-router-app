@@ -1,5 +1,5 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
-import selectedCardsReducer from './features/checkCards/selectedCardsSlice';
+import selectedCardsReducer from './features/pickCards/selectedCardsSlice';
 import { characterApiSlice } from './features/characters/charactersApiSlice';
 
 const rootReducer = combineReducers({
