@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Code coverage report for routes/details.tsx</title>
+    <title>Code coverage report for test_utils/test_utils.tsx</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../prettify.css" />
     <link rel="stylesheet" href="../base.css" />
@@ -19,13 +19,13 @@
       <div class="pad1">
         <h1>
           <a href="../index.html">All files</a> /
-          <a href="index.html">routes</a> details.tsx
+          <a href="index.html">test_utils</a> test_utils.tsx
         </h1>
         <div class="clearfix">
           <div class="fl pad1y space-right2">
             <span class="strong">0% </span>
             <span class="quiet">Statements</span>
-            <span class="fraction">0/45</span>
+            <span class="fraction">0/34</span>
           </div>
 
           <div class="fl pad1y space-right2">
@@ -43,7 +43,7 @@
           <div class="fl pad1y space-right2">
             <span class="strong">0% </span>
             <span class="quiet">Lines</span>
-            <span class="fraction">0/45</span>
+            <span class="fraction">0/34</span>
           </div>
         </div>
         <p class="quiet">
@@ -93,18 +93,7 @@
 <a name='L32'></a><a href='#L32'>32</a>
 <a name='L33'></a><a href='#L33'>33</a>
 <a name='L34'></a><a href='#L34'>34</a>
-<a name='L35'></a><a href='#L35'>35</a>
-<a name='L36'></a><a href='#L36'>36</a>
-<a name='L37'></a><a href='#L37'>37</a>
-<a name='L38'></a><a href='#L38'>38</a>
-<a name='L39'></a><a href='#L39'>39</a>
-<a name='L40'></a><a href='#L40'>40</a>
-<a name='L41'></a><a href='#L41'>41</a>
-<a name='L42'></a><a href='#L42'>42</a>
-<a name='L43'></a><a href='#L43'>43</a>
-<a name='L44'></a><a href='#L44'>44</a>
-<a name='L45'></a><a href='#L45'>45</a>
-<a name='L46'></a><a href='#L46'>46</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<a name='L35'></a><a href='#L35'>35</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -138,61 +127,39 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ><span class="branch-0 cbranch-no" title="branch not covered" >import { useNavigate, useOutletContext, useParams } from 'react-router';</span></span></span>
-<span class="cstat-no" title="statement not covered" >import { useGetDetailsQuery } from '../state/features/characters/charactersApiSlice';</span>
-<span class="cstat-no" title="statement not covered" >import Loader from '../components/loader/Loader';</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ><span class="branch-0 cbranch-no" title="branch not covered" >import React, { PropsWithChildren } from 'react';</span></span></span>
+<span class="cstat-no" title="statement not covered" >import { render } from '@testing-library/react';</span>
+<span class="cstat-no" title="statement not covered" >import type { RenderOptions } from '@testing-library/react';</span>
+<span class="cstat-no" title="statement not covered" >import { ThemeProvider } from '../context/ThemeContext';</span>
+<span class="cstat-no" title="statement not covered" >import { Provider } from 'react-redux';</span>
 <span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >interface IFContext {</span>
-<span class="cstat-no" title="statement not covered" >  closeClicked: () =&gt; void;</span>
-<span class="cstat-no" title="statement not covered" >  counter: number;</span>
+<span class="cstat-no" title="statement not covered" >import type { AppStore, RootState } from '../state/store';</span>
+<span class="cstat-no" title="statement not covered" >import { setupStore } from '../state/store';</span>
+<span class="cstat-no" title="statement not covered" ></span>
+<span class="cstat-no" title="statement not covered" >interface ExtendedRenderOptions extends Omit&lt;RenderOptions, 'queries'&gt; {</span>
+<span class="cstat-no" title="statement not covered" >  preloadedState?: Partial&lt;RootState&gt;;</span>
+<span class="cstat-no" title="statement not covered" >  store?: AppStore;</span>
 <span class="cstat-no" title="statement not covered" >}</span>
 <span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >export default function Details() {</span>
-<span class="cstat-no" title="statement not covered" >  const context = useOutletContext&lt;IFContext&gt;();</span>
-<span class="cstat-no" title="statement not covered" >  const { id } = useParams();</span>
-<span class="cstat-no" title="statement not covered" >  const navigate = useNavigate();</span>
-<span class="cstat-no" title="statement not covered" ></span>
+<span class="cstat-no" title="statement not covered" >export function renderWithProviders(</span>
+<span class="cstat-no" title="statement not covered" >  ui: React.ReactElement,</span>
+<span class="cstat-no" title="statement not covered" >  extendedRenderOptions: ExtendedRenderOptions = {}</span>
+<span class="cstat-no" title="statement not covered" >) {</span>
 <span class="cstat-no" title="statement not covered" >  const {</span>
-<span class="cstat-no" title="statement not covered" >    data: obj,</span>
-<span class="cstat-no" title="statement not covered" >    isFetching,</span>
-<span class="cstat-no" title="statement not covered" >    error,</span>
-<span class="cstat-no" title="statement not covered" >  } = useGetDetailsQuery({ id: id as string });</span>
+<span class="cstat-no" title="statement not covered" >    preloadedState = {},</span>
+<span class="cstat-no" title="statement not covered" >    store = setupStore(preloadedState),</span>
+<span class="cstat-no" title="statement not covered" >    ...renderOptions</span>
+<span class="cstat-no" title="statement not covered" >  } = extendedRenderOptions;</span>
 <span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >  const handleClickClose = () =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >    navigate(context?.counter &gt; 0 ? -context.counter : -1);</span>
-<span class="cstat-no" title="statement not covered" >    context?.closeClicked();</span>
-<span class="cstat-no" title="statement not covered" >  };</span>
-<span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >  if (isFetching) {</span>
-<span class="cstat-no" title="statement not covered" >    return &lt;Loader /&gt;;</span>
-<span class="cstat-no" title="statement not covered" >  }</span>
-<span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >  if (error || !obj) {</span>
-<span class="cstat-no" title="statement not covered" >    return &lt;div&gt;Error loading character details&lt;/div&gt;;</span>
-<span class="cstat-no" title="statement not covered" >  }</span>
-<span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >  return (</span>
-<span class="cstat-no" title="statement not covered" >    &lt;div className="details"&gt;</span>
-<span class="cstat-no" title="statement not covered" >      &lt;div className="details__data"&gt;</span>
-<span class="cstat-no" title="statement not covered" >        &lt;img src={obj?.image} alt="image" /&gt;</span>
-<span class="cstat-no" title="statement not covered" >        &lt;p&gt;{obj?.name}&lt;/p&gt;</span>
-<span class="cstat-no" title="statement not covered" >        &lt;p&gt;{obj?.origin?.name}&lt;/p&gt;</span>
-<span class="cstat-no" title="statement not covered" >        &lt;p&gt;{obj?.location?.name}&lt;/p&gt;</span>
-<span class="cstat-no" title="statement not covered" >      &lt;/div&gt;</span>
-<span class="cstat-no" title="statement not covered" >      &lt;button onClick={handleClickClose}&gt;Close details&lt;/button&gt;</span>
-<span class="cstat-no" title="statement not covered" >    &lt;/div&gt;</span>
+<span class="cstat-no" title="statement not covered" >  const Wrapper = ({</span>
+<span class="cstat-no" title="statement not covered" >    children,</span>
+<span class="cstat-no" title="statement not covered" >  }: PropsWithChildren&lt;unknown&gt;): React.JSX.Element =&gt; (</span>
+<span class="cstat-no" title="statement not covered" >    &lt;Provider store={store}&gt;</span>
+<span class="cstat-no" title="statement not covered" >      &lt;ThemeProvider&gt;{children}&lt;/ThemeProvider&gt;</span>
+<span class="cstat-no" title="statement not covered" >    &lt;/Provider&gt;</span>
 <span class="cstat-no" title="statement not covered" >  );</span>
+<span class="cstat-no" title="statement not covered" ></span>
+<span class="cstat-no" title="statement not covered" >  return { store, ...render(ui, { wrapper: Wrapper, ...renderOptions }) };</span>
 <span class="cstat-no" title="statement not covered" >}</span>
 &nbsp;</pre></td></tr></table></pre>
 

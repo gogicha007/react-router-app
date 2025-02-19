@@ -26,6 +26,7 @@ export const Card = (data: ICharacterDetails) => {
         type="checkbox"
         checked={selectedCards.includes(data.id)}
         onClick={handleCheckboxClick}
+        defaultChecked={false}
       />
     </div>
   );

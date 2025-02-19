@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux';
 import { Card } from '../card/Card';
 import type { ICharacterDetails, IResponse } from '~/types/interface';
 import type { RootState } from '~/state/store';
-import PickCards from '~/state/features/pickCards/PickCards';
+import PickCards from '../../state/features/pickCards/PickCards';
 
 const Results = (data: IResponse) => {
   const [detailsOpen, setDetailsOpen] = useState(false);
