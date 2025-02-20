@@ -1,14 +1,14 @@
 import './home.css';
-import ThemeControls from '~/components/theme-controls/ThemeControls';
-import { useGetListQuery } from '~/state/features/characters/charactersApiSlice';
+import ThemeControls from '../../app/components/theme-controls/ThemeControls';
+import { useGetListQuery } from '../../app/state/features/characters/charactersApiSlice';
 import { useState } from 'react';
-import { useCharacterFilters } from '~/hooks/useCharacterFilters';
+import { useCharacterFilters } from '../../app/hooks/useCharacterFilters';
 import { useNavigate, useLocation, Outlet } from 'react-router';
-import Results from '~/components/card-list/CardList';
-import SearchBar from '~/components/search-bar/SearchBar';
-import Loader from '~/components/loader/Loader';
-import { Pagination } from '~/components/pagination/Pagination';
-import type { IQueryError, IParamsType } from '~/types/interface';
+import Results from '../../app/components/card-list/CardList';
+import SearchBar from '../../app/components/search-bar/SearchBar';
+import Loader from '../../app/components/loader/Loader';
+import { Pagination } from '../../app/components/pagination/Pagination';
+import type { IQueryError, IParamsType } from '../../app/types/interface';
 
 export function meta() {
   return [

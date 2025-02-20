@@ -58,13 +58,13 @@ describe('Results Component', () => {
     expect(links).toHaveLength(6);
   });
 
-  test('does not render PickCards when no cards are selected', () => {
+  test('does not render PickCards(flyout) when no cards are selected', () => {
     renderWithProviders(<Results {...mockData} />);
 
     expect(screen.queryByTestId('pick-cards')).not.toBeInTheDocument();
   });
 
-  test('renders PickCards when cards are selected', () => {
+  test('renders PickCards(flyout) when cards are selected', () => {
     const store = setupStore([1]);
     renderWithProviders(<Results {...mockData} />, store);
 
@@ -76,10 +76,7 @@ describe('Results Component', () => {
 
     const links = screen.getAllByRole('link');
 
-    // Check first link
     expect(links[0]).toHaveAttribute('href', '/1');
-
-    // Check second link
     expect(links[1]).toHaveAttribute('href', '/2');
   });
 
@@ -99,7 +96,6 @@ describe('Results Component', () => {
   test('handles empty results correctly', () => {
     renderWithProviders(<Results {...mockNoData} />);
 
-    // No cards should be rendered
     expect(screen.queryByRole('card')).not.toBeInTheDocument();
   });
 

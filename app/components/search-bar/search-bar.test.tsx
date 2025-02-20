@@ -80,24 +80,6 @@ describe('SearchBar Component', () => {
     expect(mockHandleSearch).toHaveBeenCalled();
   });
 
-  test('search form prevents default on submit', async () => {
-    render(<SearchBar handleSearch={mockHandleSearch} />);
-
-    const searchButton = screen.getByRole('button', { name: /search/i });
-
-    const preventDefaultMock = jest.fn();
-    const handleSubmit = (e: Event) => {
-      preventDefaultMock();
-      e.preventDefault();
-    };
-
-    searchButton.addEventListener('click', handleSubmit);
-
-    await userEvent.click(searchButton);
-
-    expect(preventDefaultMock).toHaveBeenCalled();
-  });
-
   test('search button click prevents default and triggers search', async () => {
     (useCharacterFilters as jest.Mock).mockReturnValue({
       status: 'dead',
