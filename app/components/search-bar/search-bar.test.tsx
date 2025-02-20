@@ -109,20 +109,18 @@ describe('SearchBar Component', () => {
     const searchButton = screen.getByRole('button', { name: 'Search' });
 
     const preventDefaultMock = jest.fn();
-    // const mockEvent = { preventDefault: preventDefaultMock };
-    const handleSubmit = (e: Event) => {
-      console.log('test handle submit');
+
+    const handleSubmit = () => {
       preventDefaultMock();
-      e.preventDefault();
+      mockHandleSearch();
     };
 
     searchButton.addEventListener('click', handleSubmit);
     await userEvent.click(searchButton);
-    // fireEvent.click(searchButton, handleSubmit);
 
     expect(preventDefaultMock).toHaveBeenCalled();
-    // expect(mockSetSearchWord).toHaveBeenCalledWith('dead');
-    // expect(mockHandleSearch).toHaveBeenCalled();
+    expect(mockSetSearchWord).toHaveBeenCalledWith('dead');
+    expect(mockHandleSearch).toHaveBeenCalled();
   });
 
   test('loads saved search term from localStorage on mount', async () => {

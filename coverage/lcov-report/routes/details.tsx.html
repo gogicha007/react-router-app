@@ -23,27 +23,27 @@
         </h1>
         <div class="clearfix">
           <div class="fl pad1y space-right2">
-            <span class="strong">0% </span>
+            <span class="strong">100% </span>
             <span class="quiet">Statements</span>
-            <span class="fraction">0/45</span>
+            <span class="fraction">45/45</span>
           </div>
 
           <div class="fl pad1y space-right2">
-            <span class="strong">0% </span>
+            <span class="strong">92.3% </span>
             <span class="quiet">Branches</span>
-            <span class="fraction">0/1</span>
+            <span class="fraction">12/13</span>
           </div>
 
           <div class="fl pad1y space-right2">
-            <span class="strong">0% </span>
+            <span class="strong">100% </span>
             <span class="quiet">Functions</span>
-            <span class="fraction">0/1</span>
+            <span class="fraction">2/2</span>
           </div>
 
           <div class="fl pad1y space-right2">
-            <span class="strong">0% </span>
+            <span class="strong">100% </span>
             <span class="quiet">Lines</span>
-            <span class="fraction">0/45</span>
+            <span class="fraction">45/45</span>
           </div>
         </div>
         <p class="quiet">
@@ -57,7 +57,7 @@
           </div>
         </template>
       </div>
-      <div class="status-line low"></div>
+      <div class="status-line high"></div>
       <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -104,96 +104,96 @@
 <a name='L43'></a><a href='#L43'>43</a>
 <a name='L44'></a><a href='#L44'>44</a>
 <a name='L45'></a><a href='#L45'>45</a>
-<a name='L46'></a><a href='#L46'>46</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ><span class="branch-0 cbranch-no" title="branch not covered" >import { useNavigate, useOutletContext, useParams } from 'react-router';</span></span></span>
-<span class="cstat-no" title="statement not covered" >import { useGetDetailsQuery } from '../state/features/characters/charactersApiSlice';</span>
-<span class="cstat-no" title="statement not covered" >import Loader from '../components/loader/Loader';</span>
-<span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >interface IFContext {</span>
-<span class="cstat-no" title="statement not covered" >  closeClicked: () =&gt; void;</span>
-<span class="cstat-no" title="statement not covered" >  counter: number;</span>
-<span class="cstat-no" title="statement not covered" >}</span>
-<span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >export default function Details() {</span>
-<span class="cstat-no" title="statement not covered" >  const context = useOutletContext&lt;IFContext&gt;();</span>
-<span class="cstat-no" title="statement not covered" >  const { id } = useParams();</span>
-<span class="cstat-no" title="statement not covered" >  const navigate = useNavigate();</span>
-<span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >  const {</span>
-<span class="cstat-no" title="statement not covered" >    data: obj,</span>
-<span class="cstat-no" title="statement not covered" >    isFetching,</span>
-<span class="cstat-no" title="statement not covered" >    error,</span>
-<span class="cstat-no" title="statement not covered" >  } = useGetDetailsQuery({ id: id as string });</span>
-<span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >  const handleClickClose = () =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >    navigate(context?.counter &gt; 0 ? -context.counter : -1);</span>
-<span class="cstat-no" title="statement not covered" >    context?.closeClicked();</span>
-<span class="cstat-no" title="statement not covered" >  };</span>
-<span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >  if (isFetching) {</span>
-<span class="cstat-no" title="statement not covered" >    return &lt;Loader /&gt;;</span>
-<span class="cstat-no" title="statement not covered" >  }</span>
-<span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >  if (error || !obj) {</span>
-<span class="cstat-no" title="statement not covered" >    return &lt;div&gt;Error loading character details&lt;/div&gt;;</span>
-<span class="cstat-no" title="statement not covered" >  }</span>
-<span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >  return (</span>
-<span class="cstat-no" title="statement not covered" >    &lt;div className="details"&gt;</span>
-<span class="cstat-no" title="statement not covered" >      &lt;div className="details__data"&gt;</span>
-<span class="cstat-no" title="statement not covered" >        &lt;img src={obj?.image} alt="image" /&gt;</span>
-<span class="cstat-no" title="statement not covered" >        &lt;p&gt;{obj?.name}&lt;/p&gt;</span>
-<span class="cstat-no" title="statement not covered" >        &lt;p&gt;{obj?.origin?.name}&lt;/p&gt;</span>
-<span class="cstat-no" title="statement not covered" >        &lt;p&gt;{obj?.location?.name}&lt;/p&gt;</span>
-<span class="cstat-no" title="statement not covered" >      &lt;/div&gt;</span>
-<span class="cstat-no" title="statement not covered" >      &lt;button onClick={handleClickClose}&gt;Close details&lt;/button&gt;</span>
-<span class="cstat-no" title="statement not covered" >    &lt;/div&gt;</span>
-<span class="cstat-no" title="statement not covered" >  );</span>
-<span class="cstat-no" title="statement not covered" >}</span>
+<a name='L46'></a><a href='#L46'>46</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { useNavigate, useOutletContext, useParams } from 'react-router';
+import { useGetDetailsQuery } from '../state/features/characters/charactersApiSlice';
+import Loader from '../components/loader/Loader';
+&nbsp;
+interface IFContext {
+  closeClicked: () =&gt; void;
+  counter: number;
+}
+&nbsp;
+export default function Details() {
+  const context = useOutletContext&lt;IFContext&gt;();
+  const { id } = useParams();
+  const navigate = useNavigate();
+&nbsp;
+  const {
+    data: obj,
+    isFetching,
+    error,
+  } = useGetDetailsQuery({ id: id as string });
+&nbsp;
+  const handleClickClose = () =&gt; {
+    navigate(context?.counter &gt; 0 ? -context.counter <span class="branch-0 cbranch-no" title="branch not covered" >: -1)</span>;
+    context?.closeClicked();
+  };
+&nbsp;
+  if (isFetching) {
+    return &lt;Loader /&gt;;
+  }
+&nbsp;
+  if (error || !obj) {
+    return &lt;div&gt;Error loading character details&lt;/div&gt;;
+  }
+&nbsp;
+  return (
+    &lt;div className="details"&gt;
+      &lt;div className="details__data"&gt;
+        &lt;img src={obj?.image} alt="image" /&gt;
+        &lt;p&gt;{obj?.name}&lt;/p&gt;
+        &lt;p&gt;{obj?.origin?.name}&lt;/p&gt;
+        &lt;p&gt;{obj?.location?.name}&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;button onClick={handleClickClose}&gt;Close details&lt;/button&gt;
+    &lt;/div&gt;
+  );
+}
 &nbsp;</pre></td></tr></table></pre>
 
       <div class="push"></div>
@@ -208,7 +208,7 @@
         rel="noopener noreferrer"
         >istanbul</a
       >
-      at 2025-02-20T13:47:05.011Z
+      at 2025-02-20T17:12:10.121Z
     </div>
     <script src="../prettify.js"></script>
     <script>
