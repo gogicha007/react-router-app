@@ -2,7 +2,7 @@ import './search-bar.css';
 import { useEffect } from 'react';
 import ErrorButton from '../error-button/ErrorButton';
 import { useCharacterFilters } from '../../hooks/useCharacterFilters';
-import { useLocalStorage } from '~/hooks/useLocalStorage';
+import { useLocalStorage } from '../../hooks/useLocalStorage';
 
 const SearchBar = ({ handleSearch }: { handleSearch: () => void }) => {
   const [searchWord, setSearchWord] = useLocalStorage('Search-Word', '');
@@ -19,9 +19,13 @@ const SearchBar = ({ handleSearch }: { handleSearch: () => void }) => {
     if (!status && searchWord) setFilters({ status: searchWord, page: 1 });
   }, [setFilters]);
 
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    clickSearch();
+  };
   return (
     <div className="search__bar">
-      <form className="search__form">
+      <form className="search__form" role="form" onSubmit={handleSubmit}>
         <label htmlFor="search">Search by status</label>
         <input
           value={status}
@@ -31,14 +35,7 @@ const SearchBar = ({ handleSearch }: { handleSearch: () => void }) => {
           name="status"
           placeholder="Enter dead or alive..."
         />
-        <button
-          onClick={(e) => {
-            e.preventDefault();
-            clickSearch();
-          }}
-        >
-          Search
-        </button>
+        <button type="submit">Search</button>
       </form>
       <ErrorButton />
     </div>
