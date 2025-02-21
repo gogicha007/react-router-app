@@ -34,9 +34,9 @@ export default function Home() {
 
   const handleListClick = () => {
     const hasIdParam = /\/\d+$/.test(location.pathname);
+    console.log('has id param', hasIdParam);
     if (hasIdParam) navigate(-1);
   };
-
   return (
     <div className="home">
       <header className="home__top">
@@ -47,7 +47,11 @@ export default function Home() {
         {error && <h1>{(error as IQueryError).status}</h1>}
         {!error && data && (
           <div className="home__main">
-            <div className="home__cardlist" onClick={() => handleListClick()}>
+            <div
+              className="home__cardlist"
+              data-testid="home__cardlist"
+              onClick={() => handleListClick()}
+            >
               <Results {...data} />
               <div className="home__devider"></div>
               <Pagination resInfo={data.info} setParams={setParams} />

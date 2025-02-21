@@ -20,7 +20,7 @@ const Results = (data: IResponse) => {
   }, [data]);
 
   return (
-    <div className="results">
+    <div className="results" data-testid="results">
       {data?.results?.map((obj: ICharacterDetails) => (
         <Link
           to={{ pathname: `${obj.id}`, search: `${location.search}` }}

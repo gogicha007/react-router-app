@@ -1,22 +1,43 @@
 import '@testing-library/jest-dom';
+import { useGetListQuery } from '../../app/state/features/characters/charactersApiSlice';
 import { screen, fireEvent, waitFor } from '@testing-library/react';
 import { MemoryRouter } from 'react-router';
 import { renderWithProviders } from '../../app/test_utils/test_utils';
 import { setupStore } from '../../app/state/store';
 import Home from '../../app/routes/home';
+import { mockData } from '../../app/test_utils/mocks/mock-data';
 
-// const mockStore = configureStore([]);
+jest.resetModules();
+jest.mock('../../app/state/features/characters/charactersApiSlice', () => ({
+  __esModule: true,
+  ...jest.requireActual(
+    '../../app/state/features/characters/charactersApiSlice'
+  ),
+  useGetListQuery: jest.fn(),
+}));
+
+const mockNavigate = jest.fn();
+jest.mock('react-router', () => ({
+  ...jest.requireActual('react-router'),
+  useNavigate: () => mockNavigate,
+}));
+
+beforeEach(() => {
+  mockNavigate.mockClear();
+});
+
+afterEach(() => {
+  jest.resetModules();
+  jest.restoreAllMocks();
+});
 
 describe('Home Component', () => {
-  //   let store: ReturnType<typeof setupStore>;
-
-  //   beforeEach(() => {
-  //     store = setupStore({
-  //       // Mock any Redux state if needed
-  //     });
-  //   });
-
   test('renders Home component correctly', () => {
+    (useGetListQuery as jest.Mock).mockReturnValue({
+      data: mockData,
+      error: undefined,
+      isLoading: false,
+    });
     renderWithProviders(
       <MemoryRouter>
         <Home />
@@ -29,6 +50,11 @@ describe('Home Component', () => {
   });
 
   test('displays Loader when fetching data', async () => {
+    (useGetListQuery as jest.Mock).mockReturnValue({
+      data: undefined,
+      error: undefined,
+      isFetching: true,
+    });
     renderWithProviders(
       <MemoryRouter>
         <Home />
@@ -40,7 +66,11 @@ describe('Home Component', () => {
   });
 
   test('displays error message on API error', async () => {
-    const mockError = { status: '404 Not Found' };
+    (useGetListQuery as jest.Mock).mockReturnValue({
+      data: undefined,
+      error: { status: '404 Not Found' },
+      isLoading: false,
+    });
 
     renderWithProviders(
       <MemoryRouter>
@@ -49,15 +79,20 @@ describe('Home Component', () => {
       { store: setupStore() }
     );
 
-    // Simulating API error
     await waitFor(() => {
-      expect(screen.getByText(mockError.status)).toBeInTheDocument();
+      expect(screen.getByText('404 Not Found')).toBeInTheDocument();
     });
   });
 
   test('triggers search and updates params', async () => {
+    (useGetListQuery as jest.Mock).mockReturnValue({
+      data: mockData,
+      error: undefined,
+      isLoading: false,
+    });
+
     renderWithProviders(
-      <MemoryRouter>
+      <MemoryRouter initialEntries={['?page=1&status=alive']}>
         <Home />
       </MemoryRouter>,
       { store: setupStore() }
@@ -66,27 +101,23 @@ describe('Home Component', () => {
     const searchButton = screen.getByRole('button', { name: /search/i });
     fireEvent.click(searchButton);
 
-    // Check if state update logic was called
     await waitFor(() => {
       expect(screen.getByTestId('results')).toBeInTheDocument();
     });
   });
 
   test('navigates back when clicking on the list', async () => {
-    const mockNavigate = jest.fn();
-    jest.mock('react-router', () => ({
-      ...jest.requireActual('react-router'),
-      useNavigate: () => mockNavigate,
-    }));
+    // mockNavigate.mockReset()
 
     renderWithProviders(
-      <MemoryRouter>
+      <MemoryRouter initialEntries={['/1']}>
         <Home />
       </MemoryRouter>,
       { store: setupStore() }
     );
 
-    fireEvent.click(screen.getByTestId('home__cardlist'));
+    const listContainer = screen.getByTestId('home__cardlist');
+    fireEvent.click(listContainer);
 
     await waitFor(() => {
       expect(mockNavigate).toHaveBeenCalledWith(-1);
