@@ -23,27 +23,27 @@
         </h1>
         <div class="clearfix">
           <div class="fl pad1y space-right2">
-            <span class="strong">100% </span>
+            <span class="strong">0% </span>
             <span class="quiet">Statements</span>
-            <span class="fraction">45/45</span>
+            <span class="fraction">0/45</span>
           </div>
 
           <div class="fl pad1y space-right2">
-            <span class="strong">100% </span>
+            <span class="strong">0% </span>
             <span class="quiet">Branches</span>
-            <span class="fraction">8/8</span>
+            <span class="fraction">0/1</span>
           </div>
 
           <div class="fl pad1y space-right2">
-            <span class="strong">100% </span>
+            <span class="strong">0% </span>
             <span class="quiet">Functions</span>
-            <span class="fraction">5/5</span>
+            <span class="fraction">0/1</span>
           </div>
 
           <div class="fl pad1y space-right2">
-            <span class="strong">100% </span>
+            <span class="strong">0% </span>
             <span class="quiet">Lines</span>
-            <span class="fraction">45/45</span>
+            <span class="fraction">0/45</span>
           </div>
         </div>
         <p class="quiet">
@@ -57,7 +57,7 @@
           </div>
         </template>
       </div>
-      <div class="status-line high"></div>
+      <div class="status-line low"></div>
       <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -104,96 +104,96 @@
 <a name='L43'></a><a href='#L43'>43</a>
 <a name='L44'></a><a href='#L44'>44</a>
 <a name='L45'></a><a href='#L45'>45</a>
-<a name='L46'></a><a href='#L46'>46</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">17x</span>
-<span class="cline-any cline-yes">17x</span>
-<span class="cline-any cline-yes">17x</span>
-<span class="cline-any cline-yes">17x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">17x</span>
-<span class="cline-any cline-yes">17x</span>
-<span class="cline-any cline-yes">17x</span>
-<span class="cline-any cline-yes">17x</span>
-<span class="cline-any cline-yes">17x</span>
-<span class="cline-any cline-yes">15x</span>
-<span class="cline-any cline-yes">17x</span>
-<span class="cline-any cline-yes">17x</span>
-<span class="cline-any cline-yes">17x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">17x</span>
-<span class="cline-any cline-yes">17x</span>
-<span class="cline-any cline-yes">17x</span>
-<span class="cline-any cline-yes">17x</span>
-<span class="cline-any cline-yes">17x</span>
-<span class="cline-any cline-yes">17x</span>
-<span class="cline-any cline-yes">17x</span>
-<span class="cline-any cline-yes">17x</span>
-<span class="cline-any cline-yes">17x</span>
-<span class="cline-any cline-yes">17x</span>
-<span class="cline-any cline-yes">17x</span>
-<span class="cline-any cline-yes">17x</span>
-<span class="cline-any cline-yes">17x</span>
-<span class="cline-any cline-yes">17x</span>
-<span class="cline-any cline-yes">17x</span>
-<span class="cline-any cline-yes">17x</span>
-<span class="cline-any cline-yes">17x</span>
-<span class="cline-any cline-yes">17x</span>
-<span class="cline-any cline-yes">17x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import './search-bar.css';
-import { useEffect } from 'react';
-import ErrorButton from '../error-button/ErrorButton';
-import { useCharacterFilters } from '../../hooks/useCharacterFilters';
-import { useLocalStorage } from '../../hooks/useLocalStorage';
-&nbsp;
-const SearchBar = ({ handleSearch }: { handleSearch: () =&gt; void }) =&gt; {
-  const [searchWord, setSearchWord] = useLocalStorage('Search-Word', '');
-  const { status, setFilters } = useCharacterFilters();
-&nbsp;
-  const clickSearch = async () =&gt; {
-    setSearchWord(status);
-    handleSearch();
-  };
-&nbsp;
-  const changeInput = (word: string) =&gt; setFilters({ page: 1, status: word });
-&nbsp;
-  useEffect(() =&gt; {
-    if (!status &amp;&amp; searchWord) setFilters({ status: searchWord, page: 1 });
-  }, [setFilters]);
-&nbsp;
-  const handleSubmit = (e: React.FormEvent) =&gt; {
-    e.preventDefault();
-    clickSearch();
-  };
-  return (
-    &lt;div className="search__bar"&gt;
-      &lt;form className="search__form" role="form" onSubmit={handleSubmit}&gt;
-        &lt;label htmlFor="search"&gt;Search by status&lt;/label&gt;
-        &lt;input
-          value={status}
-          onChange={(e) =&gt; changeInput(e.target.value.trim())}
-          type="search"
-          id="search"
-          name="status"
-          placeholder="Enter dead or alive..."
-        /&gt;
-        &lt;button type="submit"&gt;Search&lt;/button&gt;
-      &lt;/form&gt;
-      &lt;ErrorButton /&gt;
-    &lt;/div&gt;
-  );
-};
-&nbsp;
-export default SearchBar;
+<a name='L46'></a><a href='#L46'>46</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ><span class="branch-0 cbranch-no" title="branch not covered" >import './search-bar.css';</span></span></span>
+<span class="cstat-no" title="statement not covered" >import { useEffect } from 'react';</span>
+<span class="cstat-no" title="statement not covered" >import ErrorButton from '../error-button/ErrorButton';</span>
+<span class="cstat-no" title="statement not covered" >import { useCharacterFilters } from '../../hooks/useCharacterFilters';</span>
+<span class="cstat-no" title="statement not covered" >import { useLocalStorage } from '../../hooks/useLocalStorage';</span>
+<span class="cstat-no" title="statement not covered" ></span>
+<span class="cstat-no" title="statement not covered" >const SearchBar = ({ handleSearch }: { handleSearch: () =&gt; void }) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >  const [searchWord, setSearchWord] = useLocalStorage('Search-Word', '');</span>
+<span class="cstat-no" title="statement not covered" >  const { status, setFilters } = useCharacterFilters();</span>
+<span class="cstat-no" title="statement not covered" ></span>
+<span class="cstat-no" title="statement not covered" >  const clickSearch = async () =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    setSearchWord(status);</span>
+<span class="cstat-no" title="statement not covered" >    handleSearch();</span>
+<span class="cstat-no" title="statement not covered" >  };</span>
+<span class="cstat-no" title="statement not covered" ></span>
+<span class="cstat-no" title="statement not covered" >  const changeInput = (word: string) =&gt; setFilters({ page: 1, status: word });</span>
+<span class="cstat-no" title="statement not covered" ></span>
+<span class="cstat-no" title="statement not covered" >  useEffect(() =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    if (!status &amp;&amp; searchWord) setFilters({ status: searchWord, page: 1 });</span>
+<span class="cstat-no" title="statement not covered" >  }, [setFilters]);</span>
+<span class="cstat-no" title="statement not covered" ></span>
+<span class="cstat-no" title="statement not covered" >  const handleSubmit = (e: React.FormEvent) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    e.preventDefault();</span>
+<span class="cstat-no" title="statement not covered" >    clickSearch();</span>
+<span class="cstat-no" title="statement not covered" >  };</span>
+<span class="cstat-no" title="statement not covered" >  return (</span>
+<span class="cstat-no" title="statement not covered" >    &lt;div className="search__bar"&gt;</span>
+<span class="cstat-no" title="statement not covered" >      &lt;form className="search__form" role="form" onSubmit={handleSubmit}&gt;</span>
+<span class="cstat-no" title="statement not covered" >        &lt;label htmlFor="search"&gt;Search by status&lt;/label&gt;</span>
+<span class="cstat-no" title="statement not covered" >        &lt;input</span>
+<span class="cstat-no" title="statement not covered" >          value={status}</span>
+<span class="cstat-no" title="statement not covered" >          onChange={(e) =&gt; changeInput(e.target.value.trim())}</span>
+<span class="cstat-no" title="statement not covered" >          type="search"</span>
+<span class="cstat-no" title="statement not covered" >          id="search"</span>
+<span class="cstat-no" title="statement not covered" >          name="status"</span>
+<span class="cstat-no" title="statement not covered" >          placeholder="Enter dead or alive..."</span>
+<span class="cstat-no" title="statement not covered" >        /&gt;</span>
+<span class="cstat-no" title="statement not covered" >        &lt;button type="submit"&gt;Search&lt;/button&gt;</span>
+<span class="cstat-no" title="statement not covered" >      &lt;/form&gt;</span>
+<span class="cstat-no" title="statement not covered" >      &lt;ErrorButton /&gt;</span>
+<span class="cstat-no" title="statement not covered" >    &lt;/div&gt;</span>
+<span class="cstat-no" title="statement not covered" >  );</span>
+<span class="cstat-no" title="statement not covered" >};</span>
+<span class="cstat-no" title="statement not covered" ></span>
+<span class="cstat-no" title="statement not covered" >export default SearchBar;</span>
 &nbsp;</pre></td></tr></table></pre>
 
       <div class="push"></div>
@@ -208,7 +208,7 @@ export default SearchBar;
         rel="noopener noreferrer"
         >istanbul</a
       >
-      at 2025-02-21T12:28:22.071Z
+      at 2025-02-21T13:11:50.501Z
     </div>
     <script src="../../prettify.js"></script>
     <script>

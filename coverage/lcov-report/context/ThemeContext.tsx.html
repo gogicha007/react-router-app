@@ -23,27 +23,27 @@
         </h1>
         <div class="clearfix">
           <div class="fl pad1y space-right2">
-            <span class="strong">95% </span>
+            <span class="strong">82.5% </span>
             <span class="quiet">Statements</span>
-            <span class="fraction">38/40</span>
-          </div>
-
-          <div class="fl pad1y space-right2">
-            <span class="strong">87.5% </span>
-            <span class="quiet">Branches</span>
-            <span class="fraction">7/8</span>
+            <span class="fraction">33/40</span>
           </div>
 
           <div class="fl pad1y space-right2">
             <span class="strong">100% </span>
-            <span class="quiet">Functions</span>
-            <span class="fraction">3/3</span>
+            <span class="quiet">Branches</span>
+            <span class="fraction">2/2</span>
           </div>
 
           <div class="fl pad1y space-right2">
-            <span class="strong">95% </span>
+            <span class="strong">33.33% </span>
+            <span class="quiet">Functions</span>
+            <span class="fraction">1/3</span>
+          </div>
+
+          <div class="fl pad1y space-right2">
+            <span class="strong">82.5% </span>
             <span class="quiet">Lines</span>
-            <span class="fraction">38/40</span>
+            <span class="fraction">33/40</span>
           </div>
         </div>
         <p class="quiet">
@@ -113,32 +113,32 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">10x</span>
-<span class="cline-any cline-yes">10x</span>
-<span class="cline-any cline-yes">10x</span>
-<span class="cline-any cline-yes">10x</span>
-<span class="cline-any cline-yes">8x</span>
-<span class="cline-any cline-yes">8x</span>
-<span class="cline-any cline-yes">10x</span>
-<span class="cline-any cline-yes">10x</span>
-<span class="cline-any cline-yes">10x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">10x</span>
-<span class="cline-any cline-yes">10x</span>
-<span class="cline-any cline-yes">10x</span>
-<span class="cline-any cline-yes">10x</span>
-<span class="cline-any cline-yes">10x</span>
-<span class="cline-any cline-yes">10x</span>
-<span class="cline-any cline-yes">10x</span>
-<span class="cline-any cline-yes">10x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">12x</span>
-<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-yes">12x</span>
-<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { createContext, useContext, useState, useEffect } from 'react';
 import type { ReactNode } from 'react';
 import { useLocalStorage } from '../../app/hooks/useLocalStorage';
@@ -161,8 +161,8 @@ export const ThemeProvider = ({ children }: { children: ReactNode }) =&gt; {
     setLsTheme(theme);
   }, [theme]);
 &nbsp;
-  const toggleTheme = () =&gt; {
-    setTheme((prev) =&gt; (prev === 'light' ? 'dark' : 'light'));
+  const toggleTheme = <span class="fstat-no" title="function not covered" >() =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    setTheme((prev) =&gt; (prev === 'light' ? 'dark' : 'light'));</span>
   };
 &nbsp;
   return (
@@ -172,13 +172,13 @@ export const ThemeProvider = ({ children }: { children: ReactNode }) =&gt; {
   );
 };
 &nbsp;
-export const useTheme = () =&gt; {
-  const context = useContext(ThemeContext);
-  if (!context) <span class="branch-0 cbranch-no" title="branch not covered" >{</span>
+export const useTheme = <span class="fstat-no" title="function not covered" >() =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >  const context = useContext(ThemeContext);</span>
+<span class="cstat-no" title="statement not covered" >  if (!context) {</span>
 <span class="cstat-no" title="statement not covered" >    throw new Error('useTheme must be used within a ThemeProvider');</span>
 <span class="cstat-no" title="statement not covered" >  }</span>
-  return context;
-};
+<span class="cstat-no" title="statement not covered" >  return context;</span>
+<span class="cstat-no" title="statement not covered" >};</span>
 &nbsp;</pre></td></tr></table></pre>
 
       <div class="push"></div>
@@ -193,7 +193,7 @@ export const useTheme = () =&gt; {
         rel="noopener noreferrer"
         >istanbul</a
       >
-      at 2025-02-21T12:28:22.071Z
+      at 2025-02-21T13:11:50.501Z
     </div>
     <script src="../prettify.js"></script>
     <script>

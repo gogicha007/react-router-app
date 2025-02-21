@@ -16,7 +16,7 @@ export default tseslint.config(
       eslintPluginPrettier,
     ],
     files: ['**/*.{ts,tsx}'],
-    ignores: ['**/mock*.ts'],
+    ignores: ['**/mock*.ts', '**/*.test.tsx'],
 
     languageOptions: {
       ecmaVersion: 2020,

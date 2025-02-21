@@ -23,27 +23,27 @@
         </h1>
         <div class="clearfix">
           <div class="fl pad1y space-right2">
-            <span class="strong">100% </span>
+            <span class="strong">0% </span>
             <span class="quiet">Statements</span>
-            <span class="fraction">51/51</span>
+            <span class="fraction">0/51</span>
           </div>
 
           <div class="fl pad1y space-right2">
-            <span class="strong">92.3% </span>
+            <span class="strong">0% </span>
             <span class="quiet">Branches</span>
-            <span class="fraction">12/13</span>
+            <span class="fraction">0/1</span>
           </div>
 
           <div class="fl pad1y space-right2">
-            <span class="strong">100% </span>
+            <span class="strong">0% </span>
             <span class="quiet">Functions</span>
-            <span class="fraction">4/4</span>
+            <span class="fraction">0/1</span>
           </div>
 
           <div class="fl pad1y space-right2">
-            <span class="strong">100% </span>
+            <span class="strong">0% </span>
             <span class="quiet">Lines</span>
-            <span class="fraction">51/51</span>
+            <span class="fraction">0/51</span>
           </div>
         </div>
         <p class="quiet">
@@ -57,7 +57,7 @@
           </div>
         </template>
       </div>
-      <div class="status-line high"></div>
+      <div class="status-line low"></div>
       <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -110,108 +110,108 @@
 <a name='L49'></a><a href='#L49'>49</a>
 <a name='L50'></a><a href='#L50'>50</a>
 <a name='L51'></a><a href='#L51'>51</a>
-<a name='L52'></a><a href='#L52'>52</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">13x</span>
-<span class="cline-any cline-yes">13x</span>
-<span class="cline-any cline-yes">13x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">4x</span>
-<span class="cline-any cline-yes">13x</span>
-<span class="cline-any cline-yes">13x</span>
-<span class="cline-any cline-yes">13x</span>
-<span class="cline-any cline-yes">13x</span>
-<span class="cline-any cline-yes">13x</span>
-<span class="cline-any cline-yes">13x</span>
-<span class="cline-any cline-yes">13x</span>
-<span class="cline-any cline-yes">13x</span>
-<span class="cline-any cline-yes">13x</span>
-<span class="cline-any cline-yes">13x</span>
-<span class="cline-any cline-yes">13x</span>
-<span class="cline-any cline-yes">13x</span>
-<span class="cline-any cline-yes">13x</span>
-<span class="cline-any cline-yes">13x</span>
-<span class="cline-any cline-yes">13x</span>
-<span class="cline-any cline-yes">13x</span>
-<span class="cline-any cline-yes">13x</span>
-<span class="cline-any cline-yes">13x</span>
-<span class="cline-any cline-yes">13x</span>
-<span class="cline-any cline-yes">13x</span>
-<span class="cline-any cline-yes">13x</span>
-<span class="cline-any cline-yes">13x</span>
-<span class="cline-any cline-yes">13x</span>
-<span class="cline-any cline-yes">13x</span>
-<span class="cline-any cline-yes">13x</span>
-<span class="cline-any cline-yes">13x</span>
-<span class="cline-any cline-yes">13x</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import './pagination.css';
-import type { IRespInfo, IParamsType } from '../../types/interface';
-import { useCharacterFilters } from '../../hooks/useCharacterFilters';
-import { isValidHTTPURL } from '../../utils/validators';
-import type { Dispatch } from 'react';
-&nbsp;
-interface Props {
-  disabled?: boolean;
-  resInfo: IRespInfo;
-  setParams: Dispatch&lt;IParamsType&gt;;
-}
-&nbsp;
-export const Pagination = (props: Props) =&gt; {
-  const { page, setFilters } = useCharacterFilters();
-&nbsp;
-  const clickPagination = (direction: 'prev' | 'next') =&gt; {
-    const urlString = props.resInfo[direction];
-    if (isValidHTTPURL(urlString as string)) {
-      const url = new URL(urlString as string);
-      const searchPage = url.searchParams.get('page') || 1;
-      const searchStatus = url.searchParams.get('status') || '';
-      setFilters({ page: searchPage ? +searchPage <span class="branch-0 cbranch-no" title="branch not covered" >: +page </span>});
-      props.setParams({ page: +searchPage, status: searchStatus });
-    } else console.error('URL string is not valid');
-  };
-&nbsp;
-  return (
-    &lt;&gt;
-      &lt;nav className="pgn"&gt;
-        &lt;button
-          style={{ pointerEvents: props.disabled ? 'none' : 'initial' }}
-          type="submit"
-          onClick={() =&gt; clickPagination('prev')}
-          className="pgn__button"
-          disabled={!props.resInfo.prev}
-        &gt;
-          &amp;laquo;
-        &lt;/button&gt;
-        &lt;button
-          style={{ pointerEvents: props.disabled ? 'none' : 'initial' }}
-          type="submit"
-          onClick={() =&gt; clickPagination('next')}
-          className="pgn__button"
-          disabled={!props.resInfo.next}
-        &gt;
-          &amp;raquo;
-        &lt;/button&gt;
-      &lt;/nav&gt;
-    &lt;/&gt;
-  );
-};
+<a name='L52'></a><a href='#L52'>52</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ><span class="branch-0 cbranch-no" title="branch not covered" >import './pagination.css';</span></span></span>
+<span class="cstat-no" title="statement not covered" >import type { IRespInfo, IParamsType } from '../../types/interface';</span>
+<span class="cstat-no" title="statement not covered" >import { useCharacterFilters } from '../../hooks/useCharacterFilters';</span>
+<span class="cstat-no" title="statement not covered" >import { isValidHTTPURL } from '../../utils/validators';</span>
+<span class="cstat-no" title="statement not covered" >import type { Dispatch } from 'react';</span>
+<span class="cstat-no" title="statement not covered" ></span>
+<span class="cstat-no" title="statement not covered" >interface Props {</span>
+<span class="cstat-no" title="statement not covered" >  disabled?: boolean;</span>
+<span class="cstat-no" title="statement not covered" >  resInfo: IRespInfo;</span>
+<span class="cstat-no" title="statement not covered" >  setParams: Dispatch&lt;IParamsType&gt;;</span>
+<span class="cstat-no" title="statement not covered" >}</span>
+<span class="cstat-no" title="statement not covered" ></span>
+<span class="cstat-no" title="statement not covered" >export const Pagination = (props: Props) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >  const { page, setFilters } = useCharacterFilters();</span>
+<span class="cstat-no" title="statement not covered" ></span>
+<span class="cstat-no" title="statement not covered" >  const clickPagination = (direction: 'prev' | 'next') =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    const urlString = props.resInfo[direction];</span>
+<span class="cstat-no" title="statement not covered" >    if (isValidHTTPURL(urlString as string)) {</span>
+<span class="cstat-no" title="statement not covered" >      const url = new URL(urlString as string);</span>
+<span class="cstat-no" title="statement not covered" >      const searchPage = url.searchParams.get('page') || 1;</span>
+<span class="cstat-no" title="statement not covered" >      const searchStatus = url.searchParams.get('status') || '';</span>
+<span class="cstat-no" title="statement not covered" >      setFilters({ page: searchPage ? +searchPage : +page });</span>
+<span class="cstat-no" title="statement not covered" >      props.setParams({ page: +searchPage, status: searchStatus });</span>
+<span class="cstat-no" title="statement not covered" >    } else console.error('URL string is not valid');</span>
+<span class="cstat-no" title="statement not covered" >  };</span>
+<span class="cstat-no" title="statement not covered" ></span>
+<span class="cstat-no" title="statement not covered" >  return (</span>
+<span class="cstat-no" title="statement not covered" >    &lt;&gt;</span>
+<span class="cstat-no" title="statement not covered" >      &lt;nav className="pgn"&gt;</span>
+<span class="cstat-no" title="statement not covered" >        &lt;button</span>
+<span class="cstat-no" title="statement not covered" >          style={{ pointerEvents: props.disabled ? 'none' : 'initial' }}</span>
+<span class="cstat-no" title="statement not covered" >          type="submit"</span>
+<span class="cstat-no" title="statement not covered" >          onClick={() =&gt; clickPagination('prev')}</span>
+<span class="cstat-no" title="statement not covered" >          className="pgn__button"</span>
+<span class="cstat-no" title="statement not covered" >          disabled={!props.resInfo.prev}</span>
+<span class="cstat-no" title="statement not covered" >        &gt;</span>
+<span class="cstat-no" title="statement not covered" >          &amp;laquo;</span>
+<span class="cstat-no" title="statement not covered" >        &lt;/button&gt;</span>
+<span class="cstat-no" title="statement not covered" >        &lt;button</span>
+<span class="cstat-no" title="statement not covered" >          style={{ pointerEvents: props.disabled ? 'none' : 'initial' }}</span>
+<span class="cstat-no" title="statement not covered" >          type="submit"</span>
+<span class="cstat-no" title="statement not covered" >          onClick={() =&gt; clickPagination('next')}</span>
+<span class="cstat-no" title="statement not covered" >          className="pgn__button"</span>
+<span class="cstat-no" title="statement not covered" >          disabled={!props.resInfo.next}</span>
+<span class="cstat-no" title="statement not covered" >        &gt;</span>
+<span class="cstat-no" title="statement not covered" >          &amp;raquo;</span>
+<span class="cstat-no" title="statement not covered" >        &lt;/button&gt;</span>
+<span class="cstat-no" title="statement not covered" >      &lt;/nav&gt;</span>
+<span class="cstat-no" title="statement not covered" >    &lt;/&gt;</span>
+<span class="cstat-no" title="statement not covered" >  );</span>
+<span class="cstat-no" title="statement not covered" >};</span>
 &nbsp;</pre></td></tr></table></pre>
 
       <div class="push"></div>
@@ -226,7 +226,7 @@ export const Pagination = (props: Props) =&gt; {
         rel="noopener noreferrer"
         >istanbul</a
       >
-      at 2025-02-21T12:28:22.071Z
+      at 2025-02-21T13:11:50.501Z
     </div>
     <script src="../../prettify.js"></script>
     <script>

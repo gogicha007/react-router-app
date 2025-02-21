@@ -25,27 +25,27 @@
         </h1>
         <div class="clearfix">
           <div class="fl pad1y space-right2">
-            <span class="strong">20% </span>
+            <span class="strong">46.66% </span>
             <span class="quiet">Statements</span>
-            <span class="fraction">12/60</span>
+            <span class="fraction">28/60</span>
           </div>
 
           <div class="fl pad1y space-right2">
             <span class="strong">100% </span>
             <span class="quiet">Branches</span>
-            <span class="fraction">0/0</span>
+            <span class="fraction">2/2</span>
           </div>
 
           <div class="fl pad1y space-right2">
-            <span class="strong">0% </span>
+            <span class="strong">33.33% </span>
             <span class="quiet">Functions</span>
-            <span class="fraction">0/1</span>
+            <span class="fraction">1/3</span>
           </div>
 
           <div class="fl pad1y space-right2">
-            <span class="strong">20% </span>
+            <span class="strong">46.66% </span>
             <span class="quiet">Lines</span>
-            <span class="fraction">12/60</span>
+            <span class="fraction">28/60</span>
           </div>
         </div>
         <p class="quiet">
@@ -131,6 +131,13 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -163,22 +170,15 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import type { RootState } from '~/state/store';
@@ -190,14 +190,14 @@ import type { IResponse } from '~/types/interface';
 type Props = {
   data: IResponse;
 };
-const PickCards = <span class="fstat-no" title="function not covered" >(props: Props) =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >  const dispatch = useDispatch();</span>
-<span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >  const selectedCards = useSelector(</span>
-<span class="cstat-no" title="statement not covered" >    (state: RootState) =&gt; state.selectedCards.selectedCards</span>
-<span class="cstat-no" title="statement not covered" >  );</span>
-<span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >  const handleDownloadCSV = () =&gt; {</span>
+const PickCards = (props: Props) =&gt; {
+  const dispatch = useDispatch();
+&nbsp;
+  const selectedCards = useSelector(
+    (state: RootState) =&gt; state.selectedCards.selectedCards
+  );
+&nbsp;
+  const handleDownloadCSV = <span class="fstat-no" title="function not covered" >() =&gt; {</span>
 <span class="cstat-no" title="statement not covered" >    if (!props.data || !props.data.results) return;</span>
 <span class="cstat-no" title="statement not covered" ></span>
 <span class="cstat-no" title="statement not covered" >    const selectedData = props.data.results.filter((card) =&gt;</span>
@@ -230,15 +230,15 @@ const PickCards = <span class="fstat-no" title="function not covered" >(props: P
 <span class="cstat-no" title="statement not covered" >    document.body.appendChild(link);</span>
 <span class="cstat-no" title="statement not covered" >    link.click();</span>
 <span class="cstat-no" title="statement not covered" >    document.body.removeChild(link);</span>
-<span class="cstat-no" title="statement not covered" >  };</span>
-<span class="cstat-no" title="statement not covered" >  return (</span>
-<span class="cstat-no" title="statement not covered" >    &lt;&gt;</span>
-<span class="cstat-no" title="statement not covered" >      &lt;h2&gt;Items selected: {selectedCards.length}&lt;/h2&gt;</span>
-<span class="cstat-no" title="statement not covered" >      &lt;button onClick={() =&gt; dispatch(clearSelection())}&gt;Deselect all&lt;/button&gt;</span>
-<span class="cstat-no" title="statement not covered" >      &lt;button onClick={handleDownloadCSV}&gt;Download CSV&lt;/button&gt;</span>
-<span class="cstat-no" title="statement not covered" >    &lt;/&gt;</span>
-<span class="cstat-no" title="statement not covered" >  );</span>
-<span class="cstat-no" title="statement not covered" >};</span>
+  };
+  return (
+    &lt;&gt;
+      &lt;h2&gt;Items selected: {selectedCards.length}&lt;/h2&gt;
+      &lt;button onClick={<span class="fstat-no" title="function not covered" >() =&gt; dispatch(clearSelection())}</span>&gt;Deselect all&lt;/button&gt;
+      &lt;button onClick={handleDownloadCSV}&gt;Download CSV&lt;/button&gt;
+    &lt;/&gt;
+  );
+};
 &nbsp;
 export default PickCards;
 &nbsp;</pre></td></tr></table></pre>
@@ -255,7 +255,7 @@ export default PickCards;
         rel="noopener noreferrer"
         >istanbul</a
       >
-      at 2025-02-21T12:28:22.071Z
+      at 2025-02-21T13:11:50.501Z
     </div>
     <script src="../../../prettify.js"></script>
     <script>
