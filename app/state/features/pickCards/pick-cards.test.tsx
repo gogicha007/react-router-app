@@ -1,10 +1,10 @@
+import '@testing-library/jest-dom';
 import { screen, fireEvent } from '@testing-library/react';
 import { MemoryRouter } from 'react-router';
-// import configureStore from 'redux-mock-store';
 import PickCards from './PickCards';
 import { clearSelection } from './selectedCardsSlice';
 import Papa from 'papaparse';
-import { mockData } from '../../../test_utils/mocks/mock-data';
+import { mockData, mockReduxData } from '../../../test_utils/mocks/mock-data';
 import { setupStore } from '../../store';
 import { renderWithProviders } from '../../../test_utils/test_utils';
 
@@ -13,13 +13,18 @@ jest.mock('papaparse', () => ({
 }));
 
 describe('PickCards Component', () => {
-  let store: any;
+  let mockStore: any;
 
   beforeEach(() => {
-    store = setupStore({
+    mockStore = setupStore({
       selectedCards: { selectedCards: [1] },
     });
-    store.dispatch = jest.fn();
+    mockStore.dispatch = jest.fn();
+    global.URL.createObjectURL = jest.fn(() => 'mock-url');
+  });
+
+  afterEach(() => {
+    jest.restoreAllMocks();
   });
 
   test('renders selected items count', () => {
@@ -27,7 +32,7 @@ describe('PickCards Component', () => {
       <MemoryRouter>
         <PickCards data={mockData} />
       </MemoryRouter>,
-      { store: setupStore() }
+      { store: mockStore }
     );
 
     expect(screen.getByText(/Items selected: 1/i)).toBeInTheDocument();
@@ -37,40 +42,42 @@ describe('PickCards Component', () => {
     renderWithProviders(
       <MemoryRouter>
         <PickCards data={mockData} />
-      </MemoryRouter>
+      </MemoryRouter>,
+      { store: mockStore }
     );
 
     const button = screen.getByText(/Deselect all/i);
     fireEvent.click(button);
-    expect(store.dispatch).toHaveBeenCalledWith(clearSelection());
+    expect(mockStore.dispatch).toHaveBeenCalledWith(clearSelection());
   });
 
   test('downloads CSV when clicking Download CSV button', () => {
+    renderWithProviders(
+      <MemoryRouter>
+        <PickCards data={mockReduxData} />
+      </MemoryRouter>,
+      { store: mockStore }
+    );
+
     const createElementSpy = jest.spyOn(document, 'createElement');
     const appendChildSpy = jest.spyOn(document.body, 'appendChild');
     const removeChildSpy = jest.spyOn(document.body, 'removeChild');
     const mockClick = jest.fn();
 
-    createElementSpy.mockReturnValue({
-      setAttribute: jest.fn(),
-      click: mockClick,
-    } as unknown as HTMLElement);
+    const mockLInk = document.createElement('a');
+    mockLInk.click = mockClick;
 
-    renderWithProviders(
-      <MemoryRouter>
-        <PickCards data={mockData} />
-      </MemoryRouter>
-    );
+    createElementSpy.mockReturnValue(mockLInk);
 
     fireEvent.click(screen.getByText(/Download CSV/i));
 
     expect(Papa.unparse).toHaveBeenCalledWith(
       [
         {
-          ID: '1',
-          Name: 'Card 1',
-          Image: 'img1',
-          Species: 'Species 1',
+          ID: 1,
+          Name: 'Test Card',
+          Image: 'test-image.jpg',
+          Species: 'Test',
           Status: 'Alive',
         },
       ],
@@ -83,13 +90,14 @@ describe('PickCards Component', () => {
   });
 
   test('alerts when no cards are selected for CSV', () => {
-    store = setupStore({ selectedCards: { selectedCards: [] } });
+    mockStore = setupStore({ selectedCards: { selectedCards: [] } });
     window.alert = jest.fn();
 
     renderWithProviders(
       <MemoryRouter>
         <PickCards data={mockData} />
-      </MemoryRouter>
+      </MemoryRouter>,
+      { store: mockStore }
     );
 
     fireEvent.click(screen.getByText(/Download CSV/i));

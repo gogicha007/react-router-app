@@ -1,7 +1,7 @@
 {
-  "D:\\CODES\\Redux\\react-router-app\\app\\components\\card\\Card.tsx": {
-    "path": "D:\\CODES\\Redux\\react-router-app\\app\\components\\card\\Card.tsx",
-    "all": true,
+  "C:\\Codes\\react-router-app\\app\\components\\card\\Card.tsx": {
+    "path": "C:\\Codes\\react-router-app\\app\\components\\card\\Card.tsx",
+    "all": false,
     "statementMap": {
       "0": {
         "start": { "line": 1, "column": 0 },
@@ -137,76 +137,116 @@
       }
     },
     "s": {
-      "0": 0,
-      "1": 0,
-      "2": 0,
-      "3": 0,
-      "4": 0,
-      "5": 0,
-      "6": 0,
-      "7": 0,
-      "8": 0,
-      "9": 0,
-      "10": 0,
-      "11": 0,
-      "12": 0,
-      "13": 0,
-      "14": 0,
-      "15": 0,
-      "16": 0,
-      "17": 0,
-      "18": 0,
-      "19": 0,
-      "20": 0,
-      "21": 0,
-      "22": 0,
-      "23": 0,
-      "24": 0,
-      "25": 0,
-      "26": 0,
-      "27": 0,
-      "28": 0,
-      "29": 0,
-      "30": 0,
-      "31": 0,
-      "32": 0
+      "0": 1,
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1,
+      "6": 1,
+      "7": 30,
+      "8": 30,
+      "9": 30,
+      "10": 30,
+      "11": 30,
+      "12": 30,
+      "13": 2,
+      "14": 2,
+      "15": 30,
+      "16": 30,
+      "17": 30,
+      "18": 30,
+      "19": 30,
+      "20": 30,
+      "21": 30,
+      "22": 30,
+      "23": 30,
+      "24": 30,
+      "25": 30,
+      "26": 30,
+      "27": 30,
+      "28": 30,
+      "29": 30,
+      "30": 30,
+      "31": 30,
+      "32": 30
     },
     "branchMap": {
       "0": {
         "type": "branch",
-        "line": 1,
+        "line": 7,
         "loc": {
-          "start": { "line": 1, "column": 0 },
+          "start": { "line": 7, "column": 20 },
           "end": { "line": 33, "column": 2 }
         },
         "locations": [
           {
-            "start": { "line": 1, "column": 0 },
+            "start": { "line": 7, "column": 20 },
             "end": { "line": 33, "column": 2 }
+          }
+        ]
+      },
+      "1": {
+        "type": "branch",
+        "line": 10,
+        "loc": {
+          "start": { "line": 10, "column": 4 },
+          "end": { "line": 10, "column": 59 }
+        },
+        "locations": [
+          {
+            "start": { "line": 10, "column": 4 },
+            "end": { "line": 10, "column": 59 }
+          }
+        ]
+      },
+      "2": {
+        "type": "branch",
+        "line": 13,
+        "loc": {
+          "start": { "line": 13, "column": 30 },
+          "end": { "line": 16, "column": 3 }
+        },
+        "locations": [
+          {
+            "start": { "line": 13, "column": 30 },
+            "end": { "line": 16, "column": 3 }
           }
         ]
       }
     },
-    "b": { "0": [0] },
+    "b": { "0": [30], "1": [48], "2": [2] },
     "fnMap": {
       "0": {
-        "name": "(empty-report)",
+        "name": "Card",
         "decl": {
-          "start": { "line": 1, "column": 0 },
+          "start": { "line": 7, "column": 20 },
           "end": { "line": 33, "column": 2 }
         },
         "loc": {
-          "start": { "line": 1, "column": 0 },
+          "start": { "line": 7, "column": 20 },
           "end": { "line": 33, "column": 2 }
         },
-        "line": 1
+        "line": 7
+      },
+      "1": {
+        "name": "handleCheckboxClick",
+        "decl": {
+          "start": { "line": 13, "column": 30 },
+          "end": { "line": 16, "column": 3 }
+        },
+        "loc": {
+          "start": { "line": 13, "column": 30 },
+          "end": { "line": 16, "column": 3 }
+        },
+        "line": 13
       }
     },
-    "f": { "0": 0 }
+    "f": { "0": 30, "1": 2 }
   },
-  "D:\\CODES\\Redux\\react-router-app\\app\\components\\card-list\\CardList.tsx": {
-    "path": "D:\\CODES\\Redux\\react-router-app\\app\\components\\card-list\\CardList.tsx",
-    "all": true,
+  "C:\\Codes\\react-router-app\\app\\components\\card-list\\CardList.tsx": {
+    "path": "C:\\Codes\\react-router-app\\app\\components\\card-list\\CardList.tsx",
+    "all": false,
     "statementMap": {
       "0": {
         "start": { "line": 1, "column": 0 },
@@ -378,85 +418,167 @@
       }
     },
     "s": {
-      "0": 0,
-      "1": 0,
-      "2": 0,
-      "3": 0,
-      "4": 0,
-      "5": 0,
-      "6": 0,
-      "7": 0,
-      "8": 0,
-      "9": 0,
-      "10": 0,
-      "11": 0,
-      "12": 0,
-      "13": 0,
-      "14": 0,
-      "15": 0,
-      "16": 0,
-      "17": 0,
-      "18": 0,
-      "19": 0,
-      "20": 0,
-      "21": 0,
-      "22": 0,
-      "23": 0,
-      "24": 0,
-      "25": 0,
-      "26": 0,
-      "27": 0,
-      "28": 0,
-      "29": 0,
-      "30": 0,
-      "31": 0,
-      "32": 0,
-      "33": 0,
-      "34": 0,
-      "35": 0,
-      "36": 0,
-      "37": 0,
-      "38": 0,
-      "39": 0,
-      "40": 0,
-      "41": 0
+      "0": 1,
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1,
+      "6": 1,
+      "7": 1,
+      "8": 1,
+      "9": 1,
+      "10": 14,
+      "11": 14,
+      "12": 14,
+      "13": 14,
+      "14": 14,
+      "15": 14,
+      "16": 14,
+      "17": 14,
+      "18": 12,
+      "19": 14,
+      "20": 14,
+      "21": 14,
+      "22": 14,
+      "23": 14,
+      "24": 78,
+      "25": 78,
+      "26": 78,
+      "27": 78,
+      "28": 78,
+      "29": 78,
+      "30": 78,
+      "31": 78,
+      "32": 78,
+      "33": 14,
+      "34": 14,
+      "35": 14,
+      "36": 14,
+      "37": 14,
+      "38": 14,
+      "39": 14,
+      "40": 1,
+      "41": 1
     },
     "branchMap": {
       "0": {
         "type": "branch",
-        "line": 1,
+        "line": 10,
         "loc": {
-          "start": { "line": 1, "column": 0 },
-          "end": { "line": 42, "column": 23 }
+          "start": { "line": 10, "column": 16 },
+          "end": { "line": 40, "column": 2 }
         },
         "locations": [
           {
-            "start": { "line": 1, "column": 0 },
-            "end": { "line": 42, "column": 23 }
+            "start": { "line": 10, "column": 16 },
+            "end": { "line": 40, "column": 2 }
+          }
+        ]
+      },
+      "1": {
+        "type": "branch",
+        "line": 36,
+        "loc": {
+          "start": { "line": 36, "column": 33 },
+          "end": { "line": 36, "column": 62 }
+        },
+        "locations": [
+          {
+            "start": { "line": 36, "column": 33 },
+            "end": { "line": 36, "column": 62 }
+          }
+        ]
+      },
+      "2": {
+        "type": "branch",
+        "line": 15,
+        "loc": {
+          "start": { "line": 15, "column": 4 },
+          "end": { "line": 15, "column": 59 }
+        },
+        "locations": [
+          {
+            "start": { "line": 15, "column": 4 },
+            "end": { "line": 15, "column": 59 }
+          }
+        ]
+      },
+      "3": {
+        "type": "branch",
+        "line": 18,
+        "loc": {
+          "start": { "line": 18, "column": 12 },
+          "end": { "line": 20, "column": 3 }
+        },
+        "locations": [
+          {
+            "start": { "line": 18, "column": 12 },
+            "end": { "line": 20, "column": 3 }
+          }
+        ]
+      },
+      "4": {
+        "type": "branch",
+        "line": 24,
+        "loc": {
+          "start": { "line": 24, "column": 26 },
+          "end": { "line": 33, "column": 15 }
+        },
+        "locations": [
+          {
+            "start": { "line": 24, "column": 26 },
+            "end": { "line": 33, "column": 15 }
+          }
+        ]
+      },
+      "5": {
+        "type": "branch",
+        "line": 28,
+        "loc": {
+          "start": { "line": 28, "column": 19 },
+          "end": { "line": 28, "column": 54 }
+        },
+        "locations": [
+          {
+            "start": { "line": 28, "column": 19 },
+            "end": { "line": 28, "column": 54 }
           }
         ]
       }
     },
-    "b": { "0": [0] },
+    "b": { "0": [14], "1": [1], "2": [24], "3": [12], "4": [78], "5": [1] },
     "fnMap": {
       "0": {
-        "name": "(empty-report)",
+        "name": "Results",
         "decl": {
-          "start": { "line": 1, "column": 0 },
-          "end": { "line": 42, "column": 23 }
+          "start": { "line": 10, "column": 16 },
+          "end": { "line": 40, "column": 2 }
         },
         "loc": {
-          "start": { "line": 1, "column": 0 },
-          "end": { "line": 42, "column": 23 }
+          "start": { "line": 10, "column": 16 },
+          "end": { "line": 40, "column": 2 }
         },
-        "line": 1
+        "line": 10
+      },
+      "1": {
+        "name": "onClick",
+        "decl": {
+          "start": { "line": 28, "column": 19 },
+          "end": { "line": 28, "column": 54 }
+        },
+        "loc": {
+          "start": { "line": 28, "column": 19 },
+          "end": { "line": 28, "column": 54 }
+        },
+        "line": 28
       }
     },
-    "f": { "0": 0 }
+    "f": { "0": 14, "1": 1 }
   },
-  "D:\\CODES\\Redux\\react-router-app\\app\\components\\error-button\\ErrorButton.tsx": {
-    "path": "D:\\CODES\\Redux\\react-router-app\\app\\components\\error-button\\ErrorButton.tsx",
-    "all": true,
+  "C:\\Codes\\react-router-app\\app\\components\\error-button\\ErrorButton.tsx": {
+    "path": "C:\\Codes\\react-router-app\\app\\components\\error-button\\ErrorButton.tsx",
+    "all": false,
     "statementMap": {
       "0": {
         "start": { "line": 1, "column": 0 },
@@ -544,64 +666,118 @@
       }
     },
     "s": {
-      "0": 0,
-      "1": 0,
-      "2": 0,
-      "3": 0,
-      "4": 0,
-      "5": 0,
-      "6": 0,
-      "7": 0,
-      "8": 0,
-      "9": 0,
-      "10": 0,
-      "11": 0,
-      "12": 0,
-      "13": 0,
-      "14": 0,
-      "15": 0,
-      "16": 0,
-      "17": 0,
-      "18": 0,
-      "19": 0,
-      "20": 0
+      "0": 1,
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 14,
+      "5": 14,
+      "6": 14,
+      "7": 2,
+      "8": 14,
+      "9": 14,
+      "10": 14,
+      "11": 2,
+      "12": 2,
+      "13": 11,
+      "14": 11,
+      "15": 11,
+      "16": 11,
+      "17": 11,
+      "18": 11,
+      "19": 1,
+      "20": 1
     },
     "branchMap": {
       "0": {
         "type": "branch",
-        "line": 1,
+        "line": 4,
         "loc": {
-          "start": { "line": 1, "column": 0 },
-          "end": { "line": 21, "column": 27 }
+          "start": { "line": 4, "column": 20 },
+          "end": { "line": 19, "column": 2 }
         },
         "locations": [
           {
-            "start": { "line": 1, "column": 0 },
-            "end": { "line": 21, "column": 27 }
+            "start": { "line": 4, "column": 20 },
+            "end": { "line": 19, "column": 2 }
+          }
+        ]
+      },
+      "1": {
+        "type": "branch",
+        "line": 11,
+        "loc": {
+          "start": { "line": 11, "column": 24 },
+          "end": { "line": 13, "column": 3 }
+        },
+        "locations": [
+          {
+            "start": { "line": 11, "column": 24 },
+            "end": { "line": 13, "column": 3 }
+          }
+        ]
+      },
+      "2": {
+        "type": "branch",
+        "line": 14,
+        "loc": {
+          "start": { "line": 14, "column": -1 },
+          "end": { "line": 19, "column": 2 }
+        },
+        "locations": [
+          {
+            "start": { "line": 14, "column": -1 },
+            "end": { "line": 19, "column": 2 }
+          }
+        ]
+      },
+      "3": {
+        "type": "branch",
+        "line": 7,
+        "loc": {
+          "start": { "line": 7, "column": 22 },
+          "end": { "line": 9, "column": 3 }
+        },
+        "locations": [
+          {
+            "start": { "line": 7, "column": 22 },
+            "end": { "line": 9, "column": 3 }
           }
         ]
       }
     },
-    "b": { "0": [0] },
+    "b": { "0": [14], "1": [2], "2": [11], "3": [2] },
     "fnMap": {
       "0": {
-        "name": "(empty-report)",
+        "name": "ErrorButton",
         "decl": {
-          "start": { "line": 1, "column": 0 },
-          "end": { "line": 21, "column": 27 }
+          "start": { "line": 4, "column": 20 },
+          "end": { "line": 19, "column": 2 }
         },
         "loc": {
-          "start": { "line": 1, "column": 0 },
-          "end": { "line": 21, "column": 27 }
+          "start": { "line": 4, "column": 20 },
+          "end": { "line": 19, "column": 2 }
         },
-        "line": 1
+        "line": 4
+      },
+      "1": {
+        "name": "errorThrown",
+        "decl": {
+          "start": { "line": 7, "column": 22 },
+          "end": { "line": 9, "column": 3 }
+        },
+        "loc": {
+          "start": { "line": 7, "column": 22 },
+          "end": { "line": 9, "column": 3 }
+        },
+        "line": 7
       }
     },
-    "f": { "0": 0 }
+    "f": { "0": 14, "1": 2 }
   },
-  "D:\\CODES\\Redux\\react-router-app\\app\\components\\loader\\Loader.tsx": {
-    "path": "D:\\CODES\\Redux\\react-router-app\\app\\components\\loader\\Loader.tsx",
-    "all": true,
+  "C:\\Codes\\react-router-app\\app\\components\\loader\\Loader.tsx": {
+    "path": "C:\\Codes\\react-router-app\\app\\components\\loader\\Loader.tsx",
+    "all": false,
     "statementMap": {
       "0": {
         "start": { "line": 1, "column": 0 },
@@ -649,54 +825,54 @@
       }
     },
     "s": {
-      "0": 0,
-      "1": 0,
-      "2": 0,
-      "3": 0,
-      "4": 0,
-      "5": 0,
-      "6": 0,
-      "7": 0,
-      "8": 0,
-      "9": 0,
-      "10": 0
+      "0": 1,
+      "1": 1,
+      "2": 1,
+      "3": 2,
+      "4": 2,
+      "5": 2,
+      "6": 2,
+      "7": 2,
+      "8": 2,
+      "9": 1,
+      "10": 1
     },
     "branchMap": {
       "0": {
         "type": "branch",
-        "line": 1,
+        "line": 3,
         "loc": {
-          "start": { "line": 1, "column": 0 },
-          "end": { "line": 11, "column": 22 }
+          "start": { "line": 3, "column": 15 },
+          "end": { "line": 9, "column": 2 }
         },
         "locations": [
           {
-            "start": { "line": 1, "column": 0 },
-            "end": { "line": 11, "column": 22 }
+            "start": { "line": 3, "column": 15 },
+            "end": { "line": 9, "column": 2 }
           }
         ]
       }
     },
-    "b": { "0": [0] },
+    "b": { "0": [2] },
     "fnMap": {
       "0": {
-        "name": "(empty-report)",
+        "name": "Loader",
         "decl": {
-          "start": { "line": 1, "column": 0 },
-          "end": { "line": 11, "column": 22 }
+          "start": { "line": 3, "column": 15 },
+          "end": { "line": 9, "column": 2 }
         },
         "loc": {
-          "start": { "line": 1, "column": 0 },
-          "end": { "line": 11, "column": 22 }
+          "start": { "line": 3, "column": 15 },
+          "end": { "line": 9, "column": 2 }
         },
-        "line": 1
+        "line": 3
       }
     },
-    "f": { "0": 0 }
+    "f": { "0": 2 }
   },
-  "D:\\CODES\\Redux\\react-router-app\\app\\components\\pagination\\Pagination.tsx": {
-    "path": "D:\\CODES\\Redux\\react-router-app\\app\\components\\pagination\\Pagination.tsx",
-    "all": true,
+  "C:\\Codes\\react-router-app\\app\\components\\pagination\\Pagination.tsx": {
+    "path": "C:\\Codes\\react-router-app\\app\\components\\pagination\\Pagination.tsx",
+    "all": false,
     "statementMap": {
       "0": {
         "start": { "line": 1, "column": 0 },
@@ -904,94 +1080,312 @@
       }
     },
     "s": {
-      "0": 0,
-      "1": 0,
-      "2": 0,
-      "3": 0,
-      "4": 0,
-      "5": 0,
-      "6": 0,
-      "7": 0,
-      "8": 0,
-      "9": 0,
-      "10": 0,
-      "11": 0,
-      "12": 0,
-      "13": 0,
-      "14": 0,
-      "15": 0,
-      "16": 0,
-      "17": 0,
-      "18": 0,
-      "19": 0,
-      "20": 0,
-      "21": 0,
-      "22": 0,
-      "23": 0,
-      "24": 0,
-      "25": 0,
-      "26": 0,
-      "27": 0,
-      "28": 0,
-      "29": 0,
-      "30": 0,
-      "31": 0,
-      "32": 0,
-      "33": 0,
-      "34": 0,
-      "35": 0,
-      "36": 0,
-      "37": 0,
-      "38": 0,
-      "39": 0,
-      "40": 0,
-      "41": 0,
-      "42": 0,
-      "43": 0,
-      "44": 0,
-      "45": 0,
-      "46": 0,
-      "47": 0,
-      "48": 0,
-      "49": 0,
-      "50": 0
+      "0": 1,
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1,
+      "6": 1,
+      "7": 1,
+      "8": 1,
+      "9": 1,
+      "10": 1,
+      "11": 1,
+      "12": 1,
+      "13": 13,
+      "14": 13,
+      "15": 13,
+      "16": 4,
+      "17": 4,
+      "18": 3,
+      "19": 3,
+      "20": 3,
+      "21": 3,
+      "22": 3,
+      "23": 4,
+      "24": 13,
+      "25": 13,
+      "26": 13,
+      "27": 13,
+      "28": 13,
+      "29": 13,
+      "30": 13,
+      "31": 13,
+      "32": 13,
+      "33": 13,
+      "34": 13,
+      "35": 13,
+      "36": 13,
+      "37": 13,
+      "38": 13,
+      "39": 13,
+      "40": 13,
+      "41": 13,
+      "42": 13,
+      "43": 13,
+      "44": 13,
+      "45": 13,
+      "46": 13,
+      "47": 13,
+      "48": 13,
+      "49": 13,
+      "50": 13
     },
     "branchMap": {
       "0": {
         "type": "branch",
-        "line": 1,
+        "line": 13,
         "loc": {
-          "start": { "line": 1, "column": 0 },
+          "start": { "line": 13, "column": 26 },
           "end": { "line": 51, "column": 2 }
         },
         "locations": [
           {
-            "start": { "line": 1, "column": 0 },
+            "start": { "line": 13, "column": 26 },
             "end": { "line": 51, "column": 2 }
+          }
+        ]
+      },
+      "1": {
+        "type": "branch",
+        "line": 31,
+        "loc": {
+          "start": { "line": 31, "column": 49 },
+          "end": { "line": 31, "column": 57 }
+        },
+        "locations": [
+          {
+            "start": { "line": 31, "column": 49 },
+            "end": { "line": 31, "column": 57 }
+          }
+        ]
+      },
+      "2": {
+        "type": "branch",
+        "line": 31,
+        "loc": {
+          "start": { "line": 31, "column": 58 },
+          "end": { "line": 31, "column": 69 }
+        },
+        "locations": [
+          {
+            "start": { "line": 31, "column": 58 },
+            "end": { "line": 31, "column": 69 }
+          }
+        ]
+      },
+      "3": {
+        "type": "branch",
+        "line": 40,
+        "loc": {
+          "start": { "line": 40, "column": 49 },
+          "end": { "line": 40, "column": 57 }
+        },
+        "locations": [
+          {
+            "start": { "line": 40, "column": 49 },
+            "end": { "line": 40, "column": 57 }
+          }
+        ]
+      },
+      "4": {
+        "type": "branch",
+        "line": 40,
+        "loc": {
+          "start": { "line": 40, "column": 58 },
+          "end": { "line": 40, "column": 69 }
+        },
+        "locations": [
+          {
+            "start": { "line": 40, "column": 58 },
+            "end": { "line": 40, "column": 69 }
+          }
+        ]
+      },
+      "5": {
+        "type": "branch",
+        "line": 16,
+        "loc": {
+          "start": { "line": 16, "column": 26 },
+          "end": { "line": 25, "column": 3 }
+        },
+        "locations": [
+          {
+            "start": { "line": 16, "column": 26 },
+            "end": { "line": 25, "column": 3 }
+          }
+        ]
+      },
+      "6": {
+        "type": "branch",
+        "line": 18,
+        "loc": {
+          "start": { "line": 18, "column": 45 },
+          "end": { "line": 24, "column": 5 }
+        },
+        "locations": [
+          {
+            "start": { "line": 18, "column": 45 },
+            "end": { "line": 24, "column": 5 }
+          }
+        ]
+      },
+      "7": {
+        "type": "branch",
+        "line": 20,
+        "loc": {
+          "start": { "line": 20, "column": 53 },
+          "end": { "line": 20, "column": 58 }
+        },
+        "locations": [
+          {
+            "start": { "line": 20, "column": 53 },
+            "end": { "line": 20, "column": 58 }
+          }
+        ]
+      },
+      "8": {
+        "type": "branch",
+        "line": 21,
+        "loc": {
+          "start": { "line": 21, "column": 57 },
+          "end": { "line": 21, "column": 63 }
+        },
+        "locations": [
+          {
+            "start": { "line": 21, "column": 57 },
+            "end": { "line": 21, "column": 63 }
+          }
+        ]
+      },
+      "9": {
+        "type": "branch",
+        "line": 22,
+        "loc": {
+          "start": { "line": 22, "column": 50 },
+          "end": { "line": 22, "column": 57 }
+        },
+        "locations": [
+          {
+            "start": { "line": 22, "column": 50 },
+            "end": { "line": 22, "column": 57 }
+          }
+        ]
+      },
+      "10": {
+        "type": "branch",
+        "line": 24,
+        "loc": {
+          "start": { "line": 24, "column": 5 },
+          "end": { "line": 24, "column": 52 }
+        },
+        "locations": [
+          {
+            "start": { "line": 24, "column": 5 },
+            "end": { "line": 24, "column": 52 }
+          }
+        ]
+      },
+      "11": {
+        "type": "branch",
+        "line": 33,
+        "loc": {
+          "start": { "line": 33, "column": 19 },
+          "end": { "line": 33, "column": 48 }
+        },
+        "locations": [
+          {
+            "start": { "line": 33, "column": 19 },
+            "end": { "line": 33, "column": 48 }
+          }
+        ]
+      },
+      "12": {
+        "type": "branch",
+        "line": 42,
+        "loc": {
+          "start": { "line": 42, "column": 19 },
+          "end": { "line": 42, "column": 48 }
+        },
+        "locations": [
+          {
+            "start": { "line": 42, "column": 19 },
+            "end": { "line": 42, "column": 48 }
           }
         ]
       }
     },
-    "b": { "0": [0] },
+    "b": {
+      "0": [13],
+      "1": [1],
+      "2": [12],
+      "3": [1],
+      "4": [12],
+      "5": [4],
+      "6": [3],
+      "7": [1],
+      "8": [1],
+      "9": [0],
+      "10": [1],
+      "11": [3],
+      "12": [1]
+    },
     "fnMap": {
       "0": {
-        "name": "(empty-report)",
+        "name": "Pagination",
         "decl": {
-          "start": { "line": 1, "column": 0 },
+          "start": { "line": 13, "column": 26 },
           "end": { "line": 51, "column": 2 }
         },
         "loc": {
-          "start": { "line": 1, "column": 0 },
+          "start": { "line": 13, "column": 26 },
           "end": { "line": 51, "column": 2 }
         },
-        "line": 1
+        "line": 13
+      },
+      "1": {
+        "name": "clickPagination",
+        "decl": {
+          "start": { "line": 16, "column": 26 },
+          "end": { "line": 25, "column": 3 }
+        },
+        "loc": {
+          "start": { "line": 16, "column": 26 },
+          "end": { "line": 25, "column": 3 }
+        },
+        "line": 16
+      },
+      "2": {
+        "name": "onClick",
+        "decl": {
+          "start": { "line": 33, "column": 19 },
+          "end": { "line": 33, "column": 48 }
+        },
+        "loc": {
+          "start": { "line": 33, "column": 19 },
+          "end": { "line": 33, "column": 48 }
+        },
+        "line": 33
+      },
+      "3": {
+        "name": "onClick",
+        "decl": {
+          "start": { "line": 42, "column": 19 },
+          "end": { "line": 42, "column": 48 }
+        },
+        "loc": {
+          "start": { "line": 42, "column": 19 },
+          "end": { "line": 42, "column": 48 }
+        },
+        "line": 42
       }
     },
-    "f": { "0": 0 }
+    "f": { "0": 13, "1": 4, "2": 3, "3": 1 }
   },
-  "D:\\CODES\\Redux\\react-router-app\\app\\components\\search-bar\\SearchBar.tsx": {
-    "path": "D:\\CODES\\Redux\\react-router-app\\app\\components\\search-bar\\SearchBar.tsx",
-    "all": true,
+  "C:\\Codes\\react-router-app\\app\\components\\search-bar\\SearchBar.tsx": {
+    "path": "C:\\Codes\\react-router-app\\app\\components\\search-bar\\SearchBar.tsx",
+    "all": false,
     "statementMap": {
       "0": {
         "start": { "line": 1, "column": 0 },
@@ -1175,88 +1569,243 @@
       }
     },
     "s": {
-      "0": 0,
-      "1": 0,
-      "2": 0,
-      "3": 0,
-      "4": 0,
-      "5": 0,
-      "6": 0,
-      "7": 0,
-      "8": 0,
-      "9": 0,
-      "10": 0,
-      "11": 0,
-      "12": 0,
-      "13": 0,
-      "14": 0,
-      "15": 0,
-      "16": 0,
-      "17": 0,
-      "18": 0,
-      "19": 0,
-      "20": 0,
-      "21": 0,
-      "22": 0,
-      "23": 0,
-      "24": 0,
-      "25": 0,
-      "26": 0,
-      "27": 0,
-      "28": 0,
-      "29": 0,
-      "30": 0,
-      "31": 0,
-      "32": 0,
-      "33": 0,
-      "34": 0,
-      "35": 0,
-      "36": 0,
-      "37": 0,
-      "38": 0,
-      "39": 0,
-      "40": 0,
-      "41": 0,
-      "42": 0,
-      "43": 0,
-      "44": 0
+      "0": 1,
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1,
+      "6": 1,
+      "7": 7,
+      "8": 7,
+      "9": 7,
+      "10": 7,
+      "11": 1,
+      "12": 1,
+      "13": 7,
+      "14": 7,
+      "15": 7,
+      "16": 7,
+      "17": 7,
+      "18": 5,
+      "19": 7,
+      "20": 7,
+      "21": 7,
+      "22": 1,
+      "23": 1,
+      "24": 7,
+      "25": 7,
+      "26": 7,
+      "27": 7,
+      "28": 7,
+      "29": 7,
+      "30": 7,
+      "31": 7,
+      "32": 7,
+      "33": 7,
+      "34": 7,
+      "35": 7,
+      "36": 7,
+      "37": 7,
+      "38": 7,
+      "39": 7,
+      "40": 7,
+      "41": 7,
+      "42": 7,
+      "43": 1,
+      "44": 1
     },
     "branchMap": {
       "0": {
         "type": "branch",
-        "line": 1,
+        "line": 7,
         "loc": {
-          "start": { "line": 1, "column": 0 },
-          "end": { "line": 45, "column": 25 }
+          "start": { "line": 7, "column": 18 },
+          "end": { "line": 43, "column": 2 }
         },
         "locations": [
           {
-            "start": { "line": 1, "column": 0 },
-            "end": { "line": 45, "column": 25 }
+            "start": { "line": 7, "column": 18 },
+            "end": { "line": 43, "column": 2 }
+          }
+        ]
+      },
+      "1": {
+        "type": "branch",
+        "line": 11,
+        "loc": {
+          "start": { "line": 11, "column": 22 },
+          "end": { "line": 14, "column": 3 }
+        },
+        "locations": [
+          {
+            "start": { "line": 11, "column": 22 },
+            "end": { "line": 14, "column": 3 }
+          }
+        ]
+      },
+      "2": {
+        "type": "branch",
+        "line": 16,
+        "loc": {
+          "start": { "line": 16, "column": 22 },
+          "end": { "line": 16, "column": 77 }
+        },
+        "locations": [
+          {
+            "start": { "line": 16, "column": 22 },
+            "end": { "line": 16, "column": 77 }
+          }
+        ]
+      },
+      "3": {
+        "type": "branch",
+        "line": 18,
+        "loc": {
+          "start": { "line": 18, "column": 12 },
+          "end": { "line": 20, "column": 3 }
+        },
+        "locations": [
+          {
+            "start": { "line": 18, "column": 12 },
+            "end": { "line": 20, "column": 3 }
+          }
+        ]
+      },
+      "4": {
+        "type": "branch",
+        "line": 19,
+        "loc": {
+          "start": { "line": 19, "column": 15 },
+          "end": { "line": 19, "column": 29 }
+        },
+        "locations": [
+          {
+            "start": { "line": 19, "column": 15 },
+            "end": { "line": 19, "column": 29 }
+          }
+        ]
+      },
+      "5": {
+        "type": "branch",
+        "line": 19,
+        "loc": {
+          "start": { "line": 19, "column": 31 },
+          "end": { "line": 19, "column": 75 }
+        },
+        "locations": [
+          {
+            "start": { "line": 19, "column": 31 },
+            "end": { "line": 19, "column": 75 }
+          }
+        ]
+      },
+      "6": {
+        "type": "branch",
+        "line": 22,
+        "loc": {
+          "start": { "line": 22, "column": 23 },
+          "end": { "line": 25, "column": 3 }
+        },
+        "locations": [
+          {
+            "start": { "line": 22, "column": 23 },
+            "end": { "line": 25, "column": 3 }
+          }
+        ]
+      },
+      "7": {
+        "type": "branch",
+        "line": 32,
+        "loc": {
+          "start": { "line": 32, "column": 20 },
+          "end": { "line": 32, "column": 61 }
+        },
+        "locations": [
+          {
+            "start": { "line": 32, "column": 20 },
+            "end": { "line": 32, "column": 61 }
           }
         ]
       }
     },
-    "b": { "0": [0] },
+    "b": {
+      "0": [7],
+      "1": [1],
+      "2": [2],
+      "3": [5],
+      "4": [4],
+      "5": [1],
+      "6": [1],
+      "7": [2]
+    },
     "fnMap": {
       "0": {
-        "name": "(empty-report)",
+        "name": "SearchBar",
         "decl": {
-          "start": { "line": 1, "column": 0 },
-          "end": { "line": 45, "column": 25 }
+          "start": { "line": 7, "column": 18 },
+          "end": { "line": 43, "column": 2 }
         },
         "loc": {
-          "start": { "line": 1, "column": 0 },
-          "end": { "line": 45, "column": 25 }
+          "start": { "line": 7, "column": 18 },
+          "end": { "line": 43, "column": 2 }
         },
-        "line": 1
+        "line": 7
+      },
+      "1": {
+        "name": "clickSearch",
+        "decl": {
+          "start": { "line": 11, "column": 22 },
+          "end": { "line": 14, "column": 3 }
+        },
+        "loc": {
+          "start": { "line": 11, "column": 22 },
+          "end": { "line": 14, "column": 3 }
+        },
+        "line": 11
+      },
+      "2": {
+        "name": "changeInput",
+        "decl": {
+          "start": { "line": 16, "column": 22 },
+          "end": { "line": 16, "column": 77 }
+        },
+        "loc": {
+          "start": { "line": 16, "column": 22 },
+          "end": { "line": 16, "column": 77 }
+        },
+        "line": 16
+      },
+      "3": {
+        "name": "handleSubmit",
+        "decl": {
+          "start": { "line": 22, "column": 23 },
+          "end": { "line": 25, "column": 3 }
+        },
+        "loc": {
+          "start": { "line": 22, "column": 23 },
+          "end": { "line": 25, "column": 3 }
+        },
+        "line": 22
+      },
+      "4": {
+        "name": "onChange",
+        "decl": {
+          "start": { "line": 32, "column": 20 },
+          "end": { "line": 32, "column": 61 }
+        },
+        "loc": {
+          "start": { "line": 32, "column": 20 },
+          "end": { "line": 32, "column": 61 }
+        },
+        "line": 32
       }
     },
-    "f": { "0": 0 }
+    "f": { "0": 7, "1": 1, "2": 2, "3": 1, "4": 2 }
   },
-  "D:\\CODES\\Redux\\react-router-app\\app\\components\\theme-controls\\ThemeControls.tsx": {
-    "path": "D:\\CODES\\Redux\\react-router-app\\app\\components\\theme-controls\\ThemeControls.tsx",
-    "all": true,
+  "C:\\Codes\\react-router-app\\app\\components\\theme-controls\\ThemeControls.tsx": {
+    "path": "C:\\Codes\\react-router-app\\app\\components\\theme-controls\\ThemeControls.tsx",
+    "all": false,
     "statementMap": {
       "0": {
         "start": { "line": 1, "column": 0 },
@@ -1392,75 +1941,75 @@
       }
     },
     "s": {
-      "0": 0,
-      "1": 0,
-      "2": 0,
-      "3": 0,
-      "4": 0,
-      "5": 0,
-      "6": 0,
-      "7": 0,
-      "8": 0,
-      "9": 0,
-      "10": 0,
-      "11": 0,
-      "12": 0,
-      "13": 0,
-      "14": 0,
-      "15": 0,
-      "16": 0,
-      "17": 0,
-      "18": 0,
-      "19": 0,
-      "20": 0,
-      "21": 0,
-      "22": 0,
-      "23": 0,
-      "24": 0,
-      "25": 0,
-      "26": 0,
-      "27": 0,
-      "28": 0,
-      "29": 0,
-      "30": 0,
-      "31": 0,
-      "32": 0
+      "0": 1,
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 7,
+      "5": 7,
+      "6": 7,
+      "7": 7,
+      "8": 7,
+      "9": 7,
+      "10": 7,
+      "11": 7,
+      "12": 7,
+      "13": 7,
+      "14": 7,
+      "15": 7,
+      "16": 7,
+      "17": 7,
+      "18": 7,
+      "19": 7,
+      "20": 7,
+      "21": 7,
+      "22": 7,
+      "23": 7,
+      "24": 7,
+      "25": 7,
+      "26": 7,
+      "27": 7,
+      "28": 7,
+      "29": 7,
+      "30": 7,
+      "31": 1,
+      "32": 1
     },
     "branchMap": {
       "0": {
         "type": "branch",
-        "line": 1,
+        "line": 4,
         "loc": {
-          "start": { "line": 1, "column": 0 },
-          "end": { "line": 33, "column": 29 }
+          "start": { "line": 4, "column": 22 },
+          "end": { "line": 31, "column": 2 }
         },
         "locations": [
           {
-            "start": { "line": 1, "column": 0 },
-            "end": { "line": 33, "column": 29 }
+            "start": { "line": 4, "column": 22 },
+            "end": { "line": 31, "column": 2 }
           }
         ]
       }
     },
-    "b": { "0": [0] },
+    "b": { "0": [7] },
     "fnMap": {
       "0": {
-        "name": "(empty-report)",
+        "name": "ThemeControls",
         "decl": {
-          "start": { "line": 1, "column": 0 },
-          "end": { "line": 33, "column": 29 }
+          "start": { "line": 4, "column": 22 },
+          "end": { "line": 31, "column": 2 }
         },
         "loc": {
-          "start": { "line": 1, "column": 0 },
-          "end": { "line": 33, "column": 29 }
+          "start": { "line": 4, "column": 22 },
+          "end": { "line": 31, "column": 2 }
         },
-        "line": 1
+        "line": 4
       }
     },
-    "f": { "0": 0 }
+    "f": { "0": 7 }
   },
-  "D:\\CODES\\Redux\\react-router-app\\app\\context\\ThemeContext.tsx": {
-    "path": "D:\\CODES\\Redux\\react-router-app\\app\\context\\ThemeContext.tsx",
+  "C:\\Codes\\react-router-app\\app\\context\\ThemeContext.tsx": {
+    "path": "C:\\Codes\\react-router-app\\app\\context\\ThemeContext.tsx",
     "all": false,
     "statementMap": {
       "0": {
@@ -1639,32 +2188,32 @@
       "11": 1,
       "12": 1,
       "13": 1,
-      "14": 1,
-      "15": 1,
-      "16": 1,
-      "17": 1,
-      "18": 1,
-      "19": 1,
-      "20": 1,
-      "21": 1,
-      "22": 1,
-      "23": 0,
-      "24": 1,
-      "25": 1,
-      "26": 1,
-      "27": 1,
-      "28": 1,
-      "29": 1,
-      "30": 1,
-      "31": 1,
+      "14": 9,
+      "15": 9,
+      "16": 9,
+      "17": 9,
+      "18": 9,
+      "19": 9,
+      "20": 9,
+      "21": 9,
+      "22": 9,
+      "23": 2,
+      "24": 9,
+      "25": 9,
+      "26": 9,
+      "27": 9,
+      "28": 9,
+      "29": 9,
+      "30": 9,
+      "31": 9,
       "32": 1,
       "33": 1,
-      "34": 0,
-      "35": 0,
+      "34": 7,
+      "35": 7,
       "36": 0,
       "37": 0,
-      "38": 0,
-      "39": 0
+      "38": 7,
+      "39": 7
     },
     "branchMap": {
       "0": {
@@ -1694,9 +2243,102 @@
             "end": { "line": 21, "column": 3 }
           }
         ]
+      },
+      "2": {
+        "type": "branch",
+        "line": 23,
+        "loc": {
+          "start": { "line": 23, "column": 22 },
+          "end": { "line": 25, "column": 3 }
+        },
+        "locations": [
+          {
+            "start": { "line": 23, "column": 22 },
+            "end": { "line": 25, "column": 3 }
+          }
+        ]
+      },
+      "3": {
+        "type": "branch",
+        "line": 24,
+        "loc": {
+          "start": { "line": 24, "column": 13 },
+          "end": { "line": 24, "column": 60 }
+        },
+        "locations": [
+          {
+            "start": { "line": 24, "column": 13 },
+            "end": { "line": 24, "column": 60 }
+          }
+        ]
+      },
+      "4": {
+        "type": "branch",
+        "line": 24,
+        "loc": {
+          "start": { "line": 24, "column": 41 },
+          "end": { "line": 24, "column": 49 }
+        },
+        "locations": [
+          {
+            "start": { "line": 24, "column": 41 },
+            "end": { "line": 24, "column": 49 }
+          }
+        ]
+      },
+      "5": {
+        "type": "branch",
+        "line": 24,
+        "loc": {
+          "start": { "line": 24, "column": 50 },
+          "end": { "line": 24, "column": 59 }
+        },
+        "locations": [
+          {
+            "start": { "line": 24, "column": 50 },
+            "end": { "line": 24, "column": 59 }
+          }
+        ]
+      },
+      "6": {
+        "type": "branch",
+        "line": 34,
+        "loc": {
+          "start": { "line": 34, "column": 24 },
+          "end": { "line": 40, "column": 2 }
+        },
+        "locations": [
+          {
+            "start": { "line": 34, "column": 24 },
+            "end": { "line": 40, "column": 2 }
+          }
+        ]
+      },
+      "7": {
+        "type": "branch",
+        "line": 36,
+        "loc": {
+          "start": { "line": 36, "column": 16 },
+          "end": { "line": 38, "column": 3 }
+        },
+        "locations": [
+          {
+            "start": { "line": 36, "column": 16 },
+            "end": { "line": 38, "column": 3 }
+          }
+        ]
       }
     },
-    "b": { "0": [1], "1": [1] },
+    "b": {
+      "0": [9],
+      "1": [9],
+      "2": [2],
+      "3": [2],
+      "4": [1],
+      "5": [1],
+      "6": [7],
+      "7": [0]
+    },
     "fnMap": {
       "0": {
         "name": "ThemeProvider",
@@ -1735,11 +2377,11 @@
         "line": 34
       }
     },
-    "f": { "0": 1, "1": 0, "2": 0 }
+    "f": { "0": 9, "1": 2, "2": 7 }
   },
-  "D:\\CODES\\Redux\\react-router-app\\app\\routes\\details.tsx": {
-    "path": "D:\\CODES\\Redux\\react-router-app\\app\\routes\\details.tsx",
-    "all": true,
+  "C:\\Codes\\react-router-app\\app\\routes\\details.tsx": {
+    "path": "C:\\Codes\\react-router-app\\app\\routes\\details.tsx",
+    "all": false,
     "statementMap": {
       "0": {
         "start": { "line": 1, "column": 0 },
@@ -1923,88 +2565,282 @@
       }
     },
     "s": {
-      "0": 0,
-      "1": 0,
-      "2": 0,
-      "3": 0,
-      "4": 0,
-      "5": 0,
-      "6": 0,
-      "7": 0,
-      "8": 0,
-      "9": 0,
-      "10": 0,
-      "11": 0,
-      "12": 0,
-      "13": 0,
-      "14": 0,
-      "15": 0,
-      "16": 0,
-      "17": 0,
-      "18": 0,
-      "19": 0,
-      "20": 0,
-      "21": 0,
-      "22": 0,
-      "23": 0,
-      "24": 0,
-      "25": 0,
-      "26": 0,
-      "27": 0,
-      "28": 0,
-      "29": 0,
-      "30": 0,
-      "31": 0,
-      "32": 0,
-      "33": 0,
-      "34": 0,
-      "35": 0,
-      "36": 0,
-      "37": 0,
-      "38": 0,
-      "39": 0,
-      "40": 0,
-      "41": 0,
-      "42": 0,
-      "43": 0,
-      "44": 0
+      "0": 1,
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1,
+      "6": 1,
+      "7": 1,
+      "8": 1,
+      "9": 4,
+      "10": 4,
+      "11": 4,
+      "12": 4,
+      "13": 4,
+      "14": 4,
+      "15": 4,
+      "16": 4,
+      "17": 4,
+      "18": 4,
+      "19": 4,
+      "20": 4,
+      "21": 1,
+      "22": 1,
+      "23": 4,
+      "24": 4,
+      "25": 4,
+      "26": 1,
+      "27": 1,
+      "28": 3,
+      "29": 4,
+      "30": 1,
+      "31": 1,
+      "32": 2,
+      "33": 2,
+      "34": 2,
+      "35": 2,
+      "36": 4,
+      "37": 4,
+      "38": 4,
+      "39": 4,
+      "40": 4,
+      "41": 4,
+      "42": 4,
+      "43": 4,
+      "44": 4
     },
     "branchMap": {
       "0": {
         "type": "branch",
-        "line": 1,
+        "line": 10,
         "loc": {
-          "start": { "line": 1, "column": 0 },
+          "start": { "line": 10, "column": 0 },
           "end": { "line": 45, "column": 1 }
         },
         "locations": [
           {
-            "start": { "line": 1, "column": 0 },
+            "start": { "line": 10, "column": 0 },
             "end": { "line": 45, "column": 1 }
+          }
+        ]
+      },
+      "1": {
+        "type": "branch",
+        "line": 26,
+        "loc": {
+          "start": { "line": 26, "column": 18 },
+          "end": { "line": 28, "column": 3 }
+        },
+        "locations": [
+          {
+            "start": { "line": 26, "column": 18 },
+            "end": { "line": 28, "column": 3 }
+          }
+        ]
+      },
+      "2": {
+        "type": "branch",
+        "line": 29,
+        "loc": {
+          "start": { "line": 29, "column": -1 },
+          "end": { "line": 30, "column": 15 }
+        },
+        "locations": [
+          {
+            "start": { "line": 29, "column": -1 },
+            "end": { "line": 30, "column": 15 }
+          }
+        ]
+      },
+      "3": {
+        "type": "branch",
+        "line": 30,
+        "loc": {
+          "start": { "line": 30, "column": 11 },
+          "end": { "line": 30, "column": 19 }
+        },
+        "locations": [
+          {
+            "start": { "line": 30, "column": 11 },
+            "end": { "line": 30, "column": 19 }
+          }
+        ]
+      },
+      "4": {
+        "type": "branch",
+        "line": 30,
+        "loc": {
+          "start": { "line": 30, "column": 21 },
+          "end": { "line": 32, "column": 3 }
+        },
+        "locations": [
+          {
+            "start": { "line": 30, "column": 21 },
+            "end": { "line": 32, "column": 3 }
+          }
+        ]
+      },
+      "5": {
+        "type": "branch",
+        "line": 33,
+        "loc": {
+          "start": { "line": 33, "column": -1 },
+          "end": { "line": 37, "column": 28 }
+        },
+        "locations": [
+          {
+            "start": { "line": 33, "column": -1 },
+            "end": { "line": 37, "column": 28 }
+          }
+        ]
+      },
+      "6": {
+        "type": "branch",
+        "line": 38,
+        "loc": {
+          "start": { "line": 38, "column": 15 },
+          "end": { "line": 38, "column": 21 }
+        },
+        "locations": [
+          {
+            "start": { "line": 38, "column": 15 },
+            "end": { "line": 38, "column": 21 }
+          }
+        ]
+      },
+      "7": {
+        "type": "branch",
+        "line": 39,
+        "loc": {
+          "start": { "line": 39, "column": 15 },
+          "end": { "line": 39, "column": 23 }
+        },
+        "locations": [
+          {
+            "start": { "line": 39, "column": 15 },
+            "end": { "line": 39, "column": 23 }
+          }
+        ]
+      },
+      "8": {
+        "type": "branch",
+        "line": 39,
+        "loc": {
+          "start": { "line": 39, "column": 23 },
+          "end": { "line": 39, "column": 29 }
+        },
+        "locations": [
+          {
+            "start": { "line": 39, "column": 23 },
+            "end": { "line": 39, "column": 29 }
+          }
+        ]
+      },
+      "9": {
+        "type": "branch",
+        "line": 40,
+        "loc": {
+          "start": { "line": 40, "column": 15 },
+          "end": { "line": 40, "column": 25 }
+        },
+        "locations": [
+          {
+            "start": { "line": 40, "column": 15 },
+            "end": { "line": 40, "column": 25 }
+          }
+        ]
+      },
+      "10": {
+        "type": "branch",
+        "line": 40,
+        "loc": {
+          "start": { "line": 40, "column": 25 },
+          "end": { "line": 40, "column": 31 }
+        },
+        "locations": [
+          {
+            "start": { "line": 40, "column": 25 },
+            "end": { "line": 40, "column": 31 }
+          }
+        ]
+      },
+      "11": {
+        "type": "branch",
+        "line": 21,
+        "loc": {
+          "start": { "line": 21, "column": 27 },
+          "end": { "line": 24, "column": 3 }
+        },
+        "locations": [
+          {
+            "start": { "line": 21, "column": 27 },
+            "end": { "line": 24, "column": 3 }
+          }
+        ]
+      },
+      "12": {
+        "type": "branch",
+        "line": 22,
+        "loc": {
+          "start": { "line": 22, "column": 53 },
+          "end": { "line": 22, "column": 57 }
+        },
+        "locations": [
+          {
+            "start": { "line": 22, "column": 53 },
+            "end": { "line": 22, "column": 57 }
           }
         ]
       }
     },
-    "b": { "0": [0] },
+    "b": {
+      "0": [4],
+      "1": [1],
+      "2": [3],
+      "3": [2],
+      "4": [1],
+      "5": [2],
+      "6": [2],
+      "7": [2],
+      "8": [1],
+      "9": [2],
+      "10": [1],
+      "11": [1],
+      "12": [0]
+    },
     "fnMap": {
       "0": {
-        "name": "(empty-report)",
+        "name": "Details",
         "decl": {
-          "start": { "line": 1, "column": 0 },
+          "start": { "line": 10, "column": 0 },
           "end": { "line": 45, "column": 1 }
         },
         "loc": {
-          "start": { "line": 1, "column": 0 },
+          "start": { "line": 10, "column": 0 },
           "end": { "line": 45, "column": 1 }
         },
-        "line": 1
+        "line": 10
+      },
+      "1": {
+        "name": "handleClickClose",
+        "decl": {
+          "start": { "line": 21, "column": 27 },
+          "end": { "line": 24, "column": 3 }
+        },
+        "loc": {
+          "start": { "line": 21, "column": 27 },
+          "end": { "line": 24, "column": 3 }
+        },
+        "line": 21
       }
     },
-    "f": { "0": 0 }
+    "f": { "0": 4, "1": 1 }
   },
-  "D:\\CODES\\Redux\\react-router-app\\app\\routes\\home.tsx": {
-    "path": "D:\\CODES\\Redux\\react-router-app\\app\\routes\\home.tsx",
-    "all": true,
+  "C:\\Codes\\react-router-app\\app\\routes\\home.tsx": {
+    "path": "C:\\Codes\\react-router-app\\app\\routes\\home.tsx",
+    "all": false,
     "statementMap": {
       "0": {
         "start": { "line": 1, "column": 0 },
@@ -2272,108 +3108,263 @@
       }
     },
     "s": {
-      "0": 0,
-      "1": 0,
-      "2": 0,
-      "3": 0,
-      "4": 0,
-      "5": 0,
-      "6": 0,
-      "7": 0,
-      "8": 0,
-      "9": 0,
-      "10": 0,
-      "11": 0,
+      "0": 1,
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1,
+      "6": 1,
+      "7": 1,
+      "8": 1,
+      "9": 1,
+      "10": 1,
+      "11": 1,
       "12": 0,
       "13": 0,
       "14": 0,
       "15": 0,
       "16": 0,
       "17": 0,
-      "18": 0,
-      "19": 0,
-      "20": 0,
-      "21": 0,
-      "22": 0,
-      "23": 0,
-      "24": 0,
-      "25": 0,
-      "26": 0,
-      "27": 0,
-      "28": 0,
-      "29": 0,
-      "30": 0,
-      "31": 0,
-      "32": 0,
-      "33": 0,
-      "34": 0,
-      "35": 0,
-      "36": 0,
-      "37": 0,
-      "38": 0,
-      "39": 0,
-      "40": 0,
-      "41": 0,
-      "42": 0,
-      "43": 0,
-      "44": 0,
-      "45": 0,
-      "46": 0,
-      "47": 0,
-      "48": 0,
-      "49": 0,
-      "50": 0,
-      "51": 0,
-      "52": 0,
-      "53": 0,
-      "54": 0,
-      "55": 0,
-      "56": 0,
-      "57": 0,
-      "58": 0,
-      "59": 0,
-      "60": 0,
-      "61": 0,
-      "62": 0,
-      "63": 0,
-      "64": 0,
-      "65": 0
+      "18": 1,
+      "19": 7,
+      "20": 7,
+      "21": 7,
+      "22": 7,
+      "23": 7,
+      "24": 7,
+      "25": 7,
+      "26": 7,
+      "27": 7,
+      "28": 7,
+      "29": 7,
+      "30": 7,
+      "31": 1,
+      "32": 7,
+      "33": 7,
+      "34": 7,
+      "35": 1,
+      "36": 1,
+      "37": 1,
+      "38": 7,
+      "39": 7,
+      "40": 7,
+      "41": 7,
+      "42": 7,
+      "43": 7,
+      "44": 7,
+      "45": 7,
+      "46": 7,
+      "47": 7,
+      "48": 5,
+      "49": 5,
+      "50": 5,
+      "51": 5,
+      "52": 5,
+      "53": 5,
+      "54": 5,
+      "55": 5,
+      "56": 5,
+      "57": 5,
+      "58": 5,
+      "59": 5,
+      "60": 7,
+      "61": 7,
+      "62": 7,
+      "63": 7,
+      "64": 7,
+      "65": 7
     },
     "branchMap": {
       "0": {
         "type": "branch",
-        "line": 1,
+        "line": 20,
         "loc": {
-          "start": { "line": 1, "column": 0 },
+          "start": { "line": 20, "column": 0 },
           "end": { "line": 66, "column": 1 }
         },
         "locations": [
           {
-            "start": { "line": 1, "column": 0 },
+            "start": { "line": 20, "column": 0 },
             "end": { "line": 66, "column": 1 }
+          }
+        ]
+      },
+      "1": {
+        "type": "branch",
+        "line": 47,
+        "loc": {
+          "start": { "line": 47, "column": 14 },
+          "end": { "line": 47, "column": 58 }
+        },
+        "locations": [
+          {
+            "start": { "line": 47, "column": 14 },
+            "end": { "line": 47, "column": 58 }
+          }
+        ]
+      },
+      "2": {
+        "type": "branch",
+        "line": 48,
+        "loc": {
+          "start": { "line": 48, "column": 15 },
+          "end": { "line": 48, "column": 23 }
+        },
+        "locations": [
+          {
+            "start": { "line": 48, "column": 15 },
+            "end": { "line": 48, "column": 23 }
+          }
+        ]
+      },
+      "3": {
+        "type": "branch",
+        "line": 48,
+        "loc": {
+          "start": { "line": 48, "column": 23 },
+          "end": { "line": 60, "column": 16 }
+        },
+        "locations": [
+          {
+            "start": { "line": 48, "column": 23 },
+            "end": { "line": 60, "column": 16 }
+          }
+        ]
+      },
+      "4": {
+        "type": "branch",
+        "line": 63,
+        "loc": {
+          "start": { "line": 63, "column": 17 },
+          "end": { "line": 63, "column": 31 }
+        },
+        "locations": [
+          {
+            "start": { "line": 63, "column": 17 },
+            "end": { "line": 63, "column": 31 }
+          }
+        ]
+      },
+      "5": {
+        "type": "branch",
+        "line": 31,
+        "loc": {
+          "start": { "line": 31, "column": 23 },
+          "end": { "line": 33, "column": 3 }
+        },
+        "locations": [
+          {
+            "start": { "line": 31, "column": 23 },
+            "end": { "line": 33, "column": 3 }
+          }
+        ]
+      },
+      "6": {
+        "type": "branch",
+        "line": 35,
+        "loc": {
+          "start": { "line": 35, "column": 26 },
+          "end": { "line": 39, "column": 3 }
+        },
+        "locations": [
+          {
+            "start": { "line": 35, "column": 26 },
+            "end": { "line": 39, "column": 3 }
+          }
+        ]
+      },
+      "7": {
+        "type": "branch",
+        "line": 53,
+        "loc": {
+          "start": { "line": 53, "column": 23 },
+          "end": { "line": 53, "column": 46 }
+        },
+        "locations": [
+          {
+            "start": { "line": 53, "column": 23 },
+            "end": { "line": 53, "column": 46 }
           }
         ]
       }
     },
-    "b": { "0": [0] },
+    "b": {
+      "0": [7],
+      "1": [1],
+      "2": [6],
+      "3": [5],
+      "4": [1],
+      "5": [1],
+      "6": [1],
+      "7": [1]
+    },
     "fnMap": {
       "0": {
-        "name": "(empty-report)",
+        "name": "meta",
         "decl": {
-          "start": { "line": 1, "column": 0 },
+          "start": { "line": 13, "column": 0 },
+          "end": { "line": 18, "column": 1 }
+        },
+        "loc": {
+          "start": { "line": 13, "column": 0 },
+          "end": { "line": 18, "column": 1 }
+        },
+        "line": 13
+      },
+      "1": {
+        "name": "Home",
+        "decl": {
+          "start": { "line": 20, "column": 0 },
           "end": { "line": 66, "column": 1 }
         },
         "loc": {
-          "start": { "line": 1, "column": 0 },
+          "start": { "line": 20, "column": 0 },
           "end": { "line": 66, "column": 1 }
         },
-        "line": 1
+        "line": 20
+      },
+      "2": {
+        "name": "handleSearch",
+        "decl": {
+          "start": { "line": 31, "column": 23 },
+          "end": { "line": 33, "column": 3 }
+        },
+        "loc": {
+          "start": { "line": 31, "column": 23 },
+          "end": { "line": 33, "column": 3 }
+        },
+        "line": 31
+      },
+      "3": {
+        "name": "handleListClick",
+        "decl": {
+          "start": { "line": 35, "column": 26 },
+          "end": { "line": 39, "column": 3 }
+        },
+        "loc": {
+          "start": { "line": 35, "column": 26 },
+          "end": { "line": 39, "column": 3 }
+        },
+        "line": 35
+      },
+      "4": {
+        "name": "onClick",
+        "decl": {
+          "start": { "line": 53, "column": 23 },
+          "end": { "line": 53, "column": 46 }
+        },
+        "loc": {
+          "start": { "line": 53, "column": 23 },
+          "end": { "line": 53, "column": 46 }
+        },
+        "line": 53
       }
     },
-    "f": { "0": 0 }
+    "f": { "0": 0, "1": 7, "2": 1, "3": 1, "4": 1 }
   },
-  "D:\\CODES\\Redux\\react-router-app\\app\\state\\features\\pickCards\\PickCards.tsx": {
-    "path": "D:\\CODES\\Redux\\react-router-app\\app\\state\\features\\pickCards\\PickCards.tsx",
+  "C:\\Codes\\react-router-app\\app\\state\\features\\pickCards\\PickCards.tsx": {
+    "path": "C:\\Codes\\react-router-app\\app\\state\\features\\pickCards\\PickCards.tsx",
     "all": false,
     "statementMap": {
       "0": {
@@ -2628,54 +3619,54 @@
       "7": 1,
       "8": 1,
       "9": 1,
-      "10": 1,
-      "11": 1,
-      "12": 1,
-      "13": 1,
-      "14": 1,
-      "15": 1,
-      "16": 1,
-      "17": 0,
-      "18": 0,
-      "19": 0,
-      "20": 0,
-      "21": 0,
-      "22": 0,
-      "23": 0,
-      "24": 0,
-      "25": 0,
-      "26": 0,
-      "27": 0,
-      "28": 0,
-      "29": 0,
-      "30": 0,
-      "31": 0,
-      "32": 0,
-      "33": 0,
-      "34": 0,
-      "35": 0,
-      "36": 0,
-      "37": 0,
-      "38": 0,
-      "39": 0,
-      "40": 0,
-      "41": 0,
-      "42": 0,
-      "43": 0,
-      "44": 0,
-      "45": 0,
-      "46": 0,
-      "47": 0,
-      "48": 0,
-      "49": 1,
-      "50": 1,
-      "51": 1,
-      "52": 1,
-      "53": 1,
-      "54": 1,
-      "55": 1,
-      "56": 1,
-      "57": 1,
+      "10": 4,
+      "11": 4,
+      "12": 4,
+      "13": 4,
+      "14": 4,
+      "15": 4,
+      "16": 4,
+      "17": 2,
+      "18": 2,
+      "19": 2,
+      "20": 7,
+      "21": 2,
+      "22": 2,
+      "23": 2,
+      "24": 1,
+      "25": 1,
+      "26": 1,
+      "27": 1,
+      "28": 1,
+      "29": 1,
+      "30": 1,
+      "31": 1,
+      "32": 1,
+      "33": 1,
+      "34": 1,
+      "35": 1,
+      "36": 1,
+      "37": 1,
+      "38": 1,
+      "39": 1,
+      "40": 1,
+      "41": 1,
+      "42": 1,
+      "43": 1,
+      "44": 1,
+      "45": 1,
+      "46": 1,
+      "47": 1,
+      "48": 1,
+      "49": 4,
+      "50": 4,
+      "51": 4,
+      "52": 4,
+      "53": 4,
+      "54": 4,
+      "55": 4,
+      "56": 4,
+      "57": 4,
       "58": 1,
       "59": 1
     },
@@ -2707,9 +3698,102 @@
             "end": { "line": 14, "column": 59 }
           }
         ]
+      },
+      "2": {
+        "type": "branch",
+        "line": 17,
+        "loc": {
+          "start": { "line": 17, "column": 28 },
+          "end": { "line": 50, "column": 3 }
+        },
+        "locations": [
+          {
+            "start": { "line": 17, "column": 28 },
+            "end": { "line": 50, "column": 3 }
+          }
+        ]
+      },
+      "3": {
+        "type": "branch",
+        "line": 18,
+        "loc": {
+          "start": { "line": 18, "column": 44 },
+          "end": { "line": 18, "column": 51 }
+        },
+        "locations": [
+          {
+            "start": { "line": 18, "column": 44 },
+            "end": { "line": 18, "column": 51 }
+          }
+        ]
+      },
+      "4": {
+        "type": "branch",
+        "line": 24,
+        "loc": {
+          "start": { "line": 24, "column": 35 },
+          "end": { "line": 50, "column": 3 }
+        },
+        "locations": [
+          {
+            "start": { "line": 24, "column": 35 },
+            "end": { "line": 50, "column": 3 }
+          }
+        ]
+      },
+      "5": {
+        "type": "branch",
+        "line": 20,
+        "loc": {
+          "start": { "line": 20, "column": 51 },
+          "end": { "line": 21, "column": 37 }
+        },
+        "locations": [
+          {
+            "start": { "line": 20, "column": 51 },
+            "end": { "line": 21, "column": 37 }
+          }
+        ]
+      },
+      "6": {
+        "type": "branch",
+        "line": 30,
+        "loc": {
+          "start": { "line": 30, "column": 23 },
+          "end": { "line": 36, "column": 8 }
+        },
+        "locations": [
+          {
+            "start": { "line": 30, "column": 23 },
+            "end": { "line": 36, "column": 8 }
+          }
+        ]
+      },
+      "7": {
+        "type": "branch",
+        "line": 54,
+        "loc": {
+          "start": { "line": 54, "column": 23 },
+          "end": { "line": 54, "column": 55 }
+        },
+        "locations": [
+          {
+            "start": { "line": 54, "column": 23 },
+            "end": { "line": 54, "column": 55 }
+          }
+        ]
       }
     },
-    "b": { "0": [1], "1": [2] },
+    "b": {
+      "0": [4],
+      "1": [8],
+      "2": [2],
+      "3": [0],
+      "4": [1],
+      "5": [7],
+      "6": [1],
+      "7": [1]
+    },
     "fnMap": {
       "0": {
         "name": "PickCards",
@@ -2748,10 +3832,10 @@
         "line": 54
       }
     },
-    "f": { "0": 1, "1": 0, "2": 0 }
+    "f": { "0": 4, "1": 2, "2": 1 }
   },
-  "D:\\CODES\\Redux\\react-router-app\\app\\test_utils\\test_utils.tsx": {
-    "path": "D:\\CODES\\Redux\\react-router-app\\app\\test_utils\\test_utils.tsx",
+  "C:\\Codes\\react-router-app\\app\\test_utils\\test_utils.tsx": {
+    "path": "C:\\Codes\\react-router-app\\app\\test_utils\\test_utils.tsx",
     "all": false,
     "statementMap": {
       "0": {
@@ -2906,26 +3990,26 @@
       "11": 1,
       "12": 1,
       "13": 1,
-      "14": 1,
-      "15": 1,
-      "16": 1,
-      "17": 1,
-      "18": 1,
-      "19": 1,
-      "20": 1,
-      "21": 1,
-      "22": 1,
-      "23": 1,
-      "24": 1,
-      "25": 1,
-      "26": 1,
-      "27": 1,
-      "28": 1,
-      "29": 1,
-      "30": 1,
-      "31": 1,
-      "32": 1,
-      "33": 1
+      "14": 9,
+      "15": 9,
+      "16": 9,
+      "17": 9,
+      "18": 9,
+      "19": 9,
+      "20": 9,
+      "21": 9,
+      "22": 9,
+      "23": 9,
+      "24": 9,
+      "25": 9,
+      "26": 9,
+      "27": 9,
+      "28": 9,
+      "29": 9,
+      "30": 9,
+      "31": 9,
+      "32": 9,
+      "33": 9
     },
     "branchMap": {
       "0": {
@@ -2957,7 +4041,7 @@
         ]
       }
     },
-    "b": { "0": [1], "1": [1] },
+    "b": { "0": [9], "1": [9] },
     "fnMap": {
       "0": {
         "name": "renderWithProviders",
@@ -2984,6 +4068,6 @@
         "line": 25
       }
     },
-    "f": { "0": 1, "1": 1 }
+    "f": { "0": 9, "1": 9 }
   }
 }
