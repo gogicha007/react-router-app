@@ -107,8 +107,6 @@ describe('Home Component', () => {
   });
 
   test('navigates back when clicking on the list', async () => {
-    // mockNavigate.mockReset()
-
     renderWithProviders(
       <MemoryRouter initialEntries={['/1']}>
         <Home />

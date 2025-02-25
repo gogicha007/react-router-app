@@ -13,16 +13,13 @@ describe('ThemeContext', () => {
     const lightRadio = screen.getByLabelText('Light') as HTMLInputElement;
     const darkRadio = screen.getByLabelText('Dark') as HTMLInputElement;
 
-    // Check default theme (assuming default is light)
     expect(lightRadio.checked).toBe(true);
     expect(darkRadio.checked).toBe(false);
 
-    // Toggle theme
     fireEvent.click(darkRadio);
     expect(lightRadio.checked).toBe(false);
     expect(darkRadio.checked).toBe(true);
 
-    // Toggle back
     fireEvent.click(lightRadio);
     expect(lightRadio.checked).toBe(true);
     expect(darkRadio.checked).toBe(false);
