@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <title>
-      Code coverage report for components/theme-controls/ThemeControls.tsx
+      Code coverage report for components/file-downloader/FileDownloader.tsx
     </title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../prettify.css" />
@@ -21,19 +21,19 @@
       <div class="pad1">
         <h1>
           <a href="../../index.html">All files</a> /
-          <a href="index.html">components/theme-controls</a> ThemeControls.tsx
+          <a href="index.html">components/file-downloader</a> FileDownloader.tsx
         </h1>
         <div class="clearfix">
           <div class="fl pad1y space-right2">
             <span class="strong">100% </span>
             <span class="quiet">Statements</span>
-            <span class="fraction">33/33</span>
+            <span class="fraction">23/23</span>
           </div>
 
           <div class="fl pad1y space-right2">
-            <span class="strong">100% </span>
+            <span class="strong">50% </span>
             <span class="quiet">Branches</span>
-            <span class="fraction">1/1</span>
+            <span class="fraction">1/2</span>
           </div>
 
           <div class="fl pad1y space-right2">
@@ -45,7 +45,7 @@
           <div class="fl pad1y space-right2">
             <span class="strong">100% </span>
             <span class="quiet">Lines</span>
-            <span class="fraction">33/33</span>
+            <span class="fraction">23/23</span>
           </div>
         </div>
         <p class="quiet">
@@ -84,82 +84,52 @@
 <a name='L21'></a><a href='#L21'>21</a>
 <a name='L22'></a><a href='#L22'>22</a>
 <a name='L23'></a><a href='#L23'>23</a>
-<a name='L24'></a><a href='#L24'>24</a>
-<a name='L25'></a><a href='#L25'>25</a>
-<a name='L26'></a><a href='#L26'>26</a>
-<a name='L27'></a><a href='#L27'>27</a>
-<a name='L28'></a><a href='#L28'>28</a>
-<a name='L29'></a><a href='#L29'>29</a>
-<a name='L30'></a><a href='#L30'>30</a>
-<a name='L31'></a><a href='#L31'>31</a>
-<a name='L32'></a><a href='#L32'>32</a>
-<a name='L33'></a><a href='#L33'>33</a>
-<a name='L34'></a><a href='#L34'>34</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L24'></a><a href='#L24'>24</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">12x</span>
-<span class="cline-any cline-yes">12x</span>
-<span class="cline-any cline-yes">12x</span>
-<span class="cline-any cline-yes">12x</span>
-<span class="cline-any cline-yes">12x</span>
-<span class="cline-any cline-yes">12x</span>
-<span class="cline-any cline-yes">12x</span>
-<span class="cline-any cline-yes">12x</span>
-<span class="cline-any cline-yes">12x</span>
-<span class="cline-any cline-yes">12x</span>
-<span class="cline-any cline-yes">12x</span>
-<span class="cline-any cline-yes">12x</span>
-<span class="cline-any cline-yes">12x</span>
-<span class="cline-any cline-yes">12x</span>
-<span class="cline-any cline-yes">12x</span>
-<span class="cline-any cline-yes">12x</span>
-<span class="cline-any cline-yes">12x</span>
-<span class="cline-any cline-yes">12x</span>
-<span class="cline-any cline-yes">12x</span>
-<span class="cline-any cline-yes">12x</span>
-<span class="cline-any cline-yes">12x</span>
-<span class="cline-any cline-yes">12x</span>
-<span class="cline-any cline-yes">12x</span>
-<span class="cline-any cline-yes">12x</span>
-<span class="cline-any cline-yes">12x</span>
-<span class="cline-any cline-yes">12x</span>
-<span class="cline-any cline-yes">12x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import './themeControls.css';
-import { useTheme } from '../../context/ThemeContext';
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">export const FileDownloader = ({
+  fileName,
+  fileContent,
+}: {
+  fileName: string;
+  fileContent: string | null;
+}) =&gt; {
+  if (!fileContent) <span class="branch-0 cbranch-no" title="branch not covered" >return null;</span>
 &nbsp;
-const ThemeControls = () =&gt; {
-  const { theme, toggleTheme } = useTheme();
+  const blob = new Blob([fileContent], { type: 'text/csv;charset=utf-8;' });
+  const url = URL.createObjectURL(blob);
 &nbsp;
   return (
-    &lt;div className="theme-toggle"&gt;
-      &lt;label&gt;
-        &lt;input
-          type="radio"
-          name="theme"
-          value="light"
-          checked={theme === 'light'}
-          onChange={toggleTheme}
-        /&gt;
-        Light
-      &lt;/label&gt;
-      &lt;label&gt;
-        &lt;input
-          type="radio"
-          name="theme"
-          value="dark"
-          checked={theme === 'dark'}
-          onChange={toggleTheme}
-        /&gt;
-        Dark
-      &lt;/label&gt;
-    &lt;/div&gt;
+    &lt;a
+      href={url}
+      download={fileName}
+      style={{ display: 'none' }}
+      id="csvDownloadLink"
+    &gt;
+      Download CSV
+    &lt;/a&gt;
   );
 };
-&nbsp;
-export default ThemeControls;
 &nbsp;</pre></td></tr></table></pre>
 
       <div class="push"></div>
@@ -174,7 +144,7 @@ export default ThemeControls;
         rel="noopener noreferrer"
         >istanbul</a
       >
-      at 2025-02-25T10:33:57.452Z
+      at 2025-02-25T07:20:09.178Z
     </div>
     <script src="../../prettify.js"></script>
     <script>

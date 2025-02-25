@@ -59,17 +59,8 @@ describe('PickCards Component', () => {
       { store: mockStore }
     );
 
-    const createElementSpy = jest.spyOn(document, 'createElement');
-    const appendChildSpy = jest.spyOn(document.body, 'appendChild');
-    const removeChildSpy = jest.spyOn(document.body, 'removeChild');
-    const mockClick = jest.fn();
-
-    const mockLInk = document.createElement('a');
-    mockLInk.click = mockClick;
-
-    createElementSpy.mockReturnValue(mockLInk);
-
-    fireEvent.click(screen.getByText(/Download CSV/i));
+    const downloadButton = screen.getByText(/Download CSV/i);
+    fireEvent.click(downloadButton);
 
     expect(Papa.unparse).toHaveBeenCalledWith(
       [
@@ -83,10 +74,11 @@ describe('PickCards Component', () => {
       ],
       { quotes: true, header: true }
     );
-    expect(createElementSpy).toHaveBeenCalledWith('a');
-    expect(appendChildSpy).toHaveBeenCalled();
-    expect(mockClick).toHaveBeenCalled();
-    expect(removeChildSpy).toHaveBeenCalled();
+    const downloadLink = screen.getByTestId('csvDownloadLink');
+    expect(downloadLink).toHaveAttribute('href');
+    expect(downloadLink).toHaveAttribute('download', '1_characters.csv');
+
+    fireEvent.click(downloadLink);
   });
 
   test('alerts when no cards are selected for CSV', () => {

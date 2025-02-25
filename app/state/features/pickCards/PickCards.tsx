@@ -2,19 +2,22 @@ import type { RootState } from '~/state/store';
 import type { IResponse } from '~/types/interface';
 import { useSelector, useDispatch } from 'react-redux';
 import { clearSelection } from './selectedCardsSlice';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import Papa from 'papaparse';
-import { FileDownloader } from '../../../components/file-downloader/FileDownloader';
 
 type Props = {
   data: IResponse;
 };
+
 const PickCards = (props: Props) => {
+  const [downloadUrl, setDownloadUrl] = useState('');
+  const downloadRef = useRef<HTMLAnchorElement | null>(null);
+  const [fileName, setFileName] = useState('');
+
   const dispatch = useDispatch();
   const selectedCards = useSelector(
     (state: RootState) => state.selectedCards.selectedCards
   );
-  const [csvContent, setCsvContent] = useState<string | null>(null);
 
   const handleDownloadCSV = () => {
     if (!props.data || !props.data.results) return;
@@ -41,27 +44,34 @@ const PickCards = (props: Props) => {
         header: true,
       }
     );
-    setCsvContent(csv);
-
     const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
-    const link = document.createElement('a');
-    link.href = URL.createObjectURL(blob);
-    link.setAttribute('download', `${selectedCards.length}_characters.csv`);
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    const url = URL.createObjectURL(blob);
+    setDownloadUrl(url);
+    setFileName(`${selectedCards.length}_characters.csv`);
+    setTimeout(() => {
+      if (downloadRef.current) {
+        downloadRef.current.click();
+        URL.revokeObjectURL(url);
+        setDownloadUrl('');
+        setFileName('');
+      }
+    });
   };
   return (
     <>
       <h2>Items selected: {selectedCards.length}</h2>
       <button onClick={() => dispatch(clearSelection())}>Deselect all</button>
       <button onClick={handleDownloadCSV}>Download CSV</button>
-      {csvContent && (
-        <FileDownloader
-          fileName={`${selectedCards.length}_characters.csv`}
-          fileContent={csvContent}
-        />
-      )}
+      <a
+        ref={downloadRef}
+        href={downloadUrl}
+        download={fileName}
+        style={{ display: 'none' }}
+        data-testid="csvDownloadLink"
+        id="csvDownloadLink"
+      >
+        Download File
+      </a>
     </>
   );
 };
